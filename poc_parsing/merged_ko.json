@@ -1,0 +1,1391 @@
+[
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0001_c01",
+    "chunk_type": "table",
+    "page": 1,
+    "section_path": [],
+    "text": "G12.4 P1 I i K k Q q F f ； (Mode On) G13.4 ： ： ( 홈가공 경로 프로그램 ) ： G12.4 P0 ； (Mode Cancel) G13.4 G12.4: G13.4: i: k: 시계방향의 연속 원운동 반시계방향의 연속 원운동 홈폭 공구경 q: 연속 원 1 주에 대한 홈가공 경로방향의 이동량 (pitch) f: 이송속도 ( 연속 원운동하는 공구의 중심 속도 )",
+    "table": {
+      "columns": [
+        "G12.4",
+        "P1 I i K k Q q F f ； (Mode On)"
+      ],
+      "rows": [
+        [
+          "G13.4",
+          ""
+        ],
+        [
+          "：",
+          ""
+        ],
+        [
+          "：",
+          "( 홈가공 경로 프로그램 )"
+        ],
+        [
+          "：",
+          ""
+        ],
+        [
+          "G12.4",
+          "P0 ； (Mode Cancel)"
+        ],
+        [
+          "G13.4",
+          ""
+        ],
+        [
+          "G12.4: G13.4: i: k:",
+          "시계방향의 연속 원운동 반시계방향의 연속 원운동 홈폭"
+        ],
+        [
+          "",
+          "공구경"
+        ],
+        [
+          "q:",
+          "연속 원 1 주에 대한 홈가공 경로방향의 이동량 (pitch)"
+        ],
+        [
+          "f:",
+          "이송속도 ( 연속 원운동하는 공구의 중심 속도 )"
+        ]
+      ],
+      "html": "<table><tbody><tr><td>G12.4</td><td>P1 I i K k Q q F f ； (Mode On)</td></tr><tr><td>G13.4</td><td></td></tr><tr><td>：</td><td></td></tr><tr><td>：</td><td>( 홈가공 경로 프로그램 )</td></tr><tr><td>：</td><td></td></tr><tr><td>G12.4</td><td>P0 ； (Mode Cancel)</td></tr><tr><td>G13.4</td><td></td></tr><tr><td>G12.4: G13.4: i: k:</td><td>시계방향의 연속 원운동 반시계방향의 연속 원운동 홈폭</td></tr><tr><td></td><td>공구경</td></tr><tr><td>q:</td><td>연속 원 1 주에 대한 홈가공 경로방향의 이동량 (pitch)</td></tr><tr><td>f:</td><td>이송속도 ( 연속 원운동하는 공구의 중심 속도 )</td></tr></tbody></table>",
+      "note": "Format 3."
+    },
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=1",
+    "note": "Format 3."
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0001_c02",
+    "chunk_type": "figure",
+    "page": 1,
+    "section_path": [],
+    "text": "",
+    "table": null,
+    "figure": {
+      "image_path": "images/ko/p0001_f01.png",
+      "bbox": [
+        144.21329986162635,
+        338.4386901855469,
+        464.2214082049684,
+        537.2496337890625
+      ],
+      "note": "주 1 G12.4/G13.4 의 Block 에는 앞에 기술한 지령 이외의 Address 는 사용할 수 없습니다 ."
+    },
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=1",
+    "note": "주 1 G12.4/G13.4 의 Block 에는 앞에 기술한 지령 이외의 Address 는 사용할 수 없습니다 ."
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0001_c03",
+    "chunk_type": "text",
+    "page": 1,
+    "section_path": [],
+    "text": "2 Parameter  GCC(NO.3452#4)=0 의 경우는 홈가공 경로 프로그램의 축 이동 정지에 의해 연속 원운동은 정지하지만 , 홈가공 경로 프로그램의 축 이동과 연속 원운동은 독립적으로 동작하므로 홈가공 경로 프 로그램의 정지위치와 pitch 로부터 환산한 연속 원운동의 위치에 엄밀하게는 정지하지 않습니다 . 해설 ㆍ Mode On 연속 원운동에 의한 홈가공 Mode  On 지령은 연속 원운동에 의한 홈가공 Mode 를 On 상태로 설정합니다 . 단 , 연 속 원운동에 의한 홈가공 유효신호가 '1' 이어야 합니다 . 만약 연속 원운동에 의한 홈가공 유효신호가 '0' 이고 Mode On 지령이 내려진 경우는 Alarm(PS0010) 이 발생합니다 . 연속 원운동에 의한 홈가공 Mode On 지령으로는 축은 이동하지 않습니다 . ㆍ Mode Cancel 연속 원운동에 의한 홈가공 Mode Cancel 지령으로는 연속원상의 현재 위치에서 홈가공 경로 프로그램의 종료지 령위치 ( 홈의 중심 ) 로 절삭이송 ( 연속 원운동의 속도 ) 으로 이동합니다 . 이동 종료 후 연속 원운동에 의한 홈가공 Mode 를 Cancel 상태로 설정합니다 .",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=1"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0002_c01",
+    "chunk_type": "text",
+    "page": 2,
+    "section_path": [],
+    "text": "ㆍ Start Up 홈가공 경로 프로그램의 최초 이동지령 Block 에서 연속원상의 점으로 절삭이송 ( 연속 원운동의 속도 ) 으로 이동합 니다 . 연속원상의 점으로 이동 종료 후 홈가공 경로 프로그램의 이동지령에 동기화하여 연속 원운동을 개시합니 다 . 홈가공 경로 프로그램의 최초 이동지령 Block 에 의해 Start Up 의 방향이 바뀝니다 .",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=2"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0002_c02",
+    "chunk_type": "figure",
+    "page": 2,
+    "section_path": [],
+    "text": "",
+    "table": null,
+    "figure": {
+      "image_path": "images/ko/p0002_f01.png",
+      "bbox": [
+        142.97656298694997,
+        195.37705993652344,
+        466.08855980380275,
+        293.5436096191406
+      ],
+      "note": "ㆍ평면에 수직인 축 지령의 경우 또는 현재 선택된 평면을 구성하는 축의 이동이 없는 경우 R=(I-K)/2 로 , (X,Y)=(-R,0) 가 됩니다 ."
+    },
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=2",
+    "note": "ㆍ평면에 수직인 축 지령의 경우 또는 현재 선택된 평면을 구성하는 축의 이동이 없는 경우 R=(I-K)/2 로 , (X,Y)=(-R,0) 가 됩니다 ."
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0002_c03",
+    "chunk_type": "figure",
+    "page": 2,
+    "section_path": [],
+    "text": "",
+    "table": null,
+    "figure": {
+      "image_path": "images/ko/p0002_f02.png",
+      "bbox": [
+        139.4659504208149,
+        340.38525390625,
+        469.11267305719775,
+        466.4510498046875
+      ],
+      "note": "ㆍ선택된 평면을 구성하는 축의 이동이 있는 경우 현재 선택되어 있는 평면 내에 투영되는 이동방향에 대해 역방향 ㆍ가로 폭 / 공구경 /pitch 의 설정 단위 I( 가로 폭 ), K( 공구경 ), Q(pitch) 의 설정 단위는 기준축 (Parameter No.1031) 의 단위를 따릅니다 ."
+    },
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=2",
+    "note": "ㆍ선택된 평면을 구성하는 축의 이동이 있는 경우 현재 선택되어 있는 평면 내에 투영되는 이동방향에 대해 역방향 ㆍ가로 폭 / 공구경 /pitch 의 설정 단위 I( 가로 폭 ), K( 공구경 ), Q(pitch) 의 설정 단위는 기준축 (Parameter No.1031) 의 단위를 따릅니다 ."
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0002_c04",
+    "chunk_type": "text",
+    "page": 2,
+    "section_path": [],
+    "text": "ㆍ이송속도 이송속도 F 는 연속 원운동하는 공구의 중심 속도를 지령합니다 . 홈가공 경로의 속도는 아래와 같습니다 . 홈가공 경로의 속도 = F×Q/ π (I-K) ㆍ Pitch pitch 가 크면 잔삭이 발생할 수 있습니다 . 공구경 >pitch 로 설정해야 합니다 . ㆍ홈가공 경로 프로그램 홈가공 경로 프로그램은 연속 원운동 중심의 궤적을 지령합니다 . (1) 유효한 지령 홈가공 경로 프로그램은 G01,  G02,  G03,  G04,  G90,  G91, 보조기능의 지령만 가능합니다 .  G00 지령은 Alarm(PS5256) 이 발생합니다 . 단 ,  Parameter  GG0(No.3452#0) 의 설정에 의해 G00 지령을 G01 동작으로 이 동할 수도 있습니다 . Modal 도 G00 이 G01 로 변화합니다 . (2) 제어축의 지령 홈가공 경로 프로그램은 아래의 제어축을 지령할 수 있습니다 . ㆍ평면을 구성하는 축의 지령 ㆍ평면에 수직인 축의 지령 (Z 축의 단독지령 ) ㆍ평면을 구성하는 축 이외의 직선축의 지령",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=2"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0003_c01",
+    "chunk_type": "text",
+    "page": 3,
+    "section_path": [],
+    "text": "ㆍ회전축의 지령 이동지령 Block 에서의 pitch 의 지정 연속 원운동에 의한 홈가공 Mode  On 지령 시의 pitch 지정과 함께 각 이동지령의 Block 에서도 pitch 의 지령 이 가능합니다 . pitch 의 지령은 Modal 로 설정하고 G12.4P1/G13.4P1 로 Mode 로 들어간 후 Mode 를 빠져나올 때까지 마지막 에 지령한 pitch 가 유효합니다 . (4) 지령례 ( 예 1) 평면에 수직인 축의 지령 (Z 축의 단독지령 ) 의 예 ・・・・・ G12.4 P1 Ii Kk Ff ； G01 Z … Q …； Z 축의 pitch 를 지령 ( 이 Block 의 pitch) X … Y … Q … ； XY 축의 pitch 를 지령 ( 이후 Block 의 pitch) ・・・・・・ Z 축만의 지령으로는 pitch 는 Z 축 방향의 이동량으로 간주합니다 . ( 예 2) 평면 이외의 이동지령을 포함하는 경우 ・・・・・ G12.4P1 Ii Kk Ff ； G01 X … Y … Z … Q … ； 사선 경로상에서의 pitch 가 됩니다 . ・・・・・ pitch 는 X ， Y ， Z 축 합성방향의 이동량이 됩니다 . ( 예 3)  pitch 의 절환 ・・・・・ G12.4P1 Ii Kk Ff ； G01 X … Y … Q … ； 를 변경하고자 하는 block 에서 Q 를 지령합니다 . X … Y … Q … ； pitch ・・・・・ pitch 는 지령된 축의 합성방향의 이동량이 됩니다 . ( 예 4) 회전축을 포함하는 지령 ・・・・・ G12.4P1 Ii Kk Ff ； G01 A … Q … ；",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=3"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0003_c02",
+    "chunk_type": "text",
+    "page": 3,
+    "section_path": [],
+    "text": "X … Y …； pitch 를 변경하고자 하는 block 에서 Q 를 지령합니다 . ・・・・・ Q 의 단위는 기준축을 따릅니다 . 따라서 기준축이 IS-B 의 경우는 pitch 의 Q100 은 0.1 ° 가 됩니다 . 연속 원운동의 반경이 안정 후에 Z 축의 절입이 시작되도록 하기 위해 연속 원운동에 의한 홈가공 Mode  On 지 령은 절입위치에서 1 회전으로 이동하는 pitch 이상의 거리를 떨어뜨려 공중에서 지령합니다 . 또한 가공 종료 시 에는 연속 원운동을 하도록 한 채 Z 축 방향으로 도피시켜 공중으로 나온 후에 연속 원운동에 의한 홈가공 Mode Cancel 지령을 수행하여 연속 원운동을 정지시키면 일정한 홈폭으로 가공할 수 있게 됩니다 . 주 3.",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=3"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0003_c03",
+    "chunk_type": "figure",
+    "page": 3,
+    "section_path": [],
+    "text": "",
+    "table": null,
+    "figure": {
+      "image_path": "images/ko/p0003_f01.png",
+      "bbox": [
+        200.95775680337178,
+        679.5304565429688,
+        413.4882083938906,
+        748.962158203125
+      ],
+      "note": "연속 원운동의 반경은 연속 원운동 기동 시는 지령에 대해 작아지고 연속 원운동이 감속정지할 때는 반 대로 커집니다 . 또한 정상상태에서는 지령반경에 대해 작아집니다 . 이것은 보간 후 가감속 및 Servo 계 의 지연에 의해 발생하는 오차입니다 ."
+    },
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=3",
+    "note": "연속 원운동의 반경은 연속 원운동 기동 시는 지령에 대해 작아지고 연속 원운동이 감속정지할 때는 반 대로 커집니다 . 또한 정상상태에서는 지령반경에 대해 작아집니다 . 이것은 보간 후 가감속 및 Servo 계 의 지연에 의해 발생하는 오차입니다 ."
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0004_c01",
+    "chunk_type": "text",
+    "page": 4,
+    "section_path": [],
+    "text": "ㆍ Mode 중 신호 연속 원운동에 의한 홈가공 Mode 중임을 PMC 측에 통지합니다 . 연속 원운동에 의한 홈가공 Mode On 으로 신호가 '1' 이 됩니다 . 연속 원운동에 의한 홈가공 Mode Cancel 로 신호가 '0' 이 됩니다 . ㆍ연속 원운동의 가속도에 의한 이송속도의 Clamp G12.4/13.4 의 I,  K 의 지령과 연속 원운동의 가속도 Clamp 값 (Parameter No.3490) 에 의해 연속 원운동의 이송속도 지령 F 를 Clamp 할 수 있습니다 . Clamp 이송속도 F ＝ SQR(Parameter  No.3490  ×  (I-K)  /  2)×  60 예 Parameter  No.3490=100 의 경우 G13.4 P1 I10.0 K5.0 Q1.0 F1000 ; 일 때 , Clamp 이송속도 =948 따라서 F=948 로 실행 G13.4 P1 I10.0 K8.0 Q1.0 F1000 ; 일 때 , Clamp 이송속도 =600 따라서 F=600 으로 실행 G13.4 P1 I10.0 K9.0 Q1.0 F1000 ; 일 때 , Clamp 이송속도 =424 따라서 F=424 로 실행 Clamp 한 속도에 대해 연속 원운동 이송속도 Override 가 적용됩니다 . ㆍ보간 후 가감속 연속 원운동에 의한 홈가공 Mode 중에는 보간 후 가감속이 유효합니다 . ㆍ정지조건 선택 Feed Hold, Single Block 등에 의한 연속 원운동의 정지",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=4"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0004_c02",
+    "chunk_type": "text",
+    "page": 4,
+    "section_path": [],
+    "text": "Feed  Hold 또는 Single  Block 등 여러 가지 정지조건으로 지령동작이 정지하였을 때 , 연속 원운동을 계속할 것인지 멈출 것인지를 Parameter 에 의해 선택할 수 있습니다 . No.3452#4(GCC) = 0 ： = 1 ： 연속 원운동을 정지합니다 . 연속 원운동을 속행합니다 . (2) 정지조건 /Mode 절환",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=4"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0004_c03",
+    "chunk_type": "table",
+    "page": 4,
+    "section_path": [],
+    "text": "정지조건 홈가공경로동작 연속원운동의 정지 / 속행 연속원운동의 정지 / 속행 운전 Mode 의 절환 정지조건 홈가공경로동작 정지 (GCC=0) 속행 (GCC=1) 운전 Mode 의 절환 Feed Hold 감속정지 감속정지 속행 경로동작정지 후 절환 가능 Single Block 감속정지 감속정지 속행 경로동작정지 후 절환 가능 수동 Mode 로의 절환 감속정지 감속정지 속행 경로동작정지 후 절환됨 자동 Mode 간에서의 절환 감속정지 감속정지 속행 경로동작정지 후 절환 가능 MDI 운전 감속정지 감속정지 속행 경로동작정지 후 절환 가능 Pitch Override 0% 감속정지 감속정지 속행 경로동작정지 후 절환 가능 M/S/T Code FIN 대기 감속정지 감속정지 속행 경로동작정지 후 절환 가능 Programming error 감속정지 감속정지 속행 경로동작정지 후 절환 가능 Overheat Alarm 감속정지 감속정지 속행 경로동작정지 후 절환 가능 BG 편집 Alarm 속행 속행 속행 자동운전은 정지하지 않음 Mode 종료 감속정지 반경분 인입 / 감속정지 반경분 인입 / 감속정지 다른 정지조건에 따름 Reset 감속정지 감속정지 감속정지 전 동작 정지 후 절환 가능 Machine Lock *1 감속정지 감속정지 감속정지 --- Servo Off *1 감속정지 감속정지 감속정지 --- Interlock *2 감속정지 감속정지 감속정지 --- OT Alarm 감속정지 감속정지 감속정지 전 동작 정지 후 절환 가능 DS Alarm 감속정지 감속정지 감속정지 전 동작 정지 후 절환 가능 비상정지 즉시정지 즉시정지 즉시정지 비상정지해제 후 절환 가능 PC 관련 Alarm 즉시정지 즉시정지 즉시정지 Alarm 해제 후 절환 가능",
+    "table": {
+      "columns": [
+        "정지조건",
+        "홈가공경로동작",
+        "연속원운동의 정지 / 속행",
+        "연속원운동의 정지 / 속행",
+        "운전 Mode 의 절환"
+      ],
+      "rows": [
+        [
+          "정지조건",
+          "홈가공경로동작",
+          "정지 (GCC=0)",
+          "속행 (GCC=1)",
+          "운전 Mode 의 절환"
+        ],
+        [
+          "Feed Hold",
+          "감속정지",
+          "감속정지",
+          "속행",
+          "경로동작정지 후 절환 가능"
+        ],
+        [
+          "Single Block",
+          "감속정지",
+          "감속정지",
+          "속행",
+          "경로동작정지 후 절환 가능"
+        ],
+        [
+          "수동 Mode 로의 절환",
+          "감속정지",
+          "감속정지",
+          "속행",
+          "경로동작정지 후 절환됨"
+        ],
+        [
+          "자동 Mode 간에서의 절환",
+          "감속정지",
+          "감속정지",
+          "속행",
+          "경로동작정지 후 절환 가능"
+        ],
+        [
+          "MDI 운전",
+          "감속정지",
+          "감속정지",
+          "속행",
+          "경로동작정지 후 절환 가능"
+        ],
+        [
+          "Pitch Override 0%",
+          "감속정지",
+          "감속정지",
+          "속행",
+          "경로동작정지 후 절환 가능"
+        ],
+        [
+          "M/S/T Code FIN 대기",
+          "감속정지",
+          "감속정지",
+          "속행",
+          "경로동작정지 후 절환 가능"
+        ],
+        [
+          "Programming error",
+          "감속정지",
+          "감속정지",
+          "속행",
+          "경로동작정지 후 절환 가능"
+        ],
+        [
+          "Overheat Alarm",
+          "감속정지",
+          "감속정지",
+          "속행",
+          "경로동작정지 후 절환 가능"
+        ],
+        [
+          "BG 편집 Alarm",
+          "속행",
+          "속행",
+          "속행",
+          "자동운전은 정지하지 않음"
+        ],
+        [
+          "Mode 종료",
+          "감속정지",
+          "반경분 인입 / 감속정지",
+          "반경분 인입 / 감속정지",
+          "다른 정지조건에 따름"
+        ],
+        [
+          "Reset",
+          "감속정지",
+          "감속정지",
+          "감속정지",
+          "전 동작 정지 후 절환 가능"
+        ],
+        [
+          "Machine Lock *1",
+          "감속정지",
+          "감속정지",
+          "감속정지",
+          "---"
+        ],
+        [
+          "Servo Off *1",
+          "감속정지",
+          "감속정지",
+          "감속정지",
+          "---"
+        ],
+        [
+          "Interlock *2",
+          "감속정지",
+          "감속정지",
+          "감속정지",
+          "---"
+        ],
+        [
+          "OT Alarm",
+          "감속정지",
+          "감속정지",
+          "감속정지",
+          "전 동작 정지 후 절환 가능"
+        ],
+        [
+          "DS Alarm",
+          "감속정지",
+          "감속정지",
+          "감속정지",
+          "전 동작 정지 후 절환 가능"
+        ],
+        [
+          "비상정지",
+          "즉시정지",
+          "즉시정지",
+          "즉시정지",
+          "비상정지해제 후 절환 가능"
+        ],
+        [
+          "PC 관련 Alarm",
+          "즉시정지",
+          "즉시정지",
+          "즉시정지",
+          "Alarm 해제 후 절환 가능"
+        ]
+      ],
+      "html": "<table><caption><div class=\"caption\">표 3.6 (a)</div></caption><tbody><tr><th rowspan=\"2\">정지조건</th><th rowspan=\"2\">홈가공경로동작</th><th colspan=\"2\">연속원운동의 정지 / 속행</th><th rowspan=\"2\">운전 Mode 의 절환</th></tr><tr><th>정지 (GCC=0)</th><th>속행 (GCC=1)</th></tr><tr><td>Feed Hold</td><td>감속정지</td><td>감속정지</td><td>속행</td><td>경로동작정지 후 절환 가능</td></tr><tr><td>Single Block</td><td>감속정지</td><td>감속정지</td><td>속행</td><td>경로동작정지 후 절환 가능</td></tr><tr><td>수동 Mode 로의 절환</td><td>감속정지</td><td>감속정지</td><td>속행</td><td>경로동작정지 후 절환됨</td></tr><tr><td>자동 Mode 간에서의 절환</td><td>감속정지</td><td>감속정지</td><td>속행</td><td>경로동작정지 후 절환 가능</td></tr><tr><td>MDI 운전</td><td>감속정지</td><td>감속정지</td><td>속행</td><td>경로동작정지 후 절환 가능</td></tr><tr><td>Pitch Override 0%</td><td>감속정지</td><td>감속정지</td><td>속행</td><td>경로동작정지 후 절환 가능</td></tr><tr><td>M/S/T Code FIN 대기</td><td>감속정지</td><td>감속정지</td><td>속행</td><td>경로동작정지 후 절환 가능</td></tr><tr><td>Programming error</td><td>감속정지</td><td>감속정지</td><td>속행</td><td>경로동작정지 후 절환 가능</td></tr><tr><td>Overheat Alarm</td><td>감속정지</td><td>감속정지</td><td>속행</td><td>경로동작정지 후 절환 가능</td></tr><tr><td>BG 편집 Alarm</td><td>속행</td><td>속행</td><td>속행</td><td>자동운전은 정지하지 않음</td></tr><tr><td>Mode 종료</td><td>감속정지</td><td>반경분 인입 / 감속정지</td><td>반경분 인입 / 감속정지</td><td>다른 정지조건에 따름</td></tr><tr><td>Reset</td><td>감속정지</td><td>감속정지</td><td>감속정지</td><td>전 동작 정지 후 절환 가능</td></tr><tr><td>Machine Lock *1</td><td>감속정지</td><td>감속정지</td><td>감속정지</td><td>---</td></tr><tr><td>Servo Off *1</td><td>감속정지</td><td>감속정지</td><td>감속정지</td><td>---</td></tr><tr><td>Interlock *2</td><td>감속정지</td><td>감속정지</td><td>감속정지</td><td>---</td></tr><tr><td>OT Alarm</td><td>감속정지</td><td>감속정지</td><td>감속정지</td><td>전 동작 정지 후 절환 가능</td></tr><tr><td>DS Alarm</td><td>감속정지</td><td>감속정지</td><td>감속정지</td><td>전 동작 정지 후 절환 가능</td></tr><tr><td>비상정지</td><td>즉시정지</td><td>즉시정지</td><td>즉시정지</td><td>비상정지해제 후 절환 가능</td></tr><tr><td>PC 관련 Alarm</td><td>즉시정지</td><td>즉시정지</td><td>즉시정지</td><td>Alarm 해제 후 절환 가능</td></tr></tbody></table>",
+      "note": "정지조건에 대한 홈가공 경로동작 , 연속 원운동의 정지동작 및 운전 Mode 로의 절환조건은 표 3.6  (a) 와 같 습니다 . 표 3.6 (a)"
+    },
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=4",
+    "note": "정지조건에 대한 홈가공 경로동작 , 연속 원운동의 정지동작 및 운전 Mode 로의 절환조건은 표 3.6  (a) 와 같 습니다 . 표 3.6 (a)"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0005_c01",
+    "chunk_type": "table",
+    "page": 5,
+    "section_path": [],
+    "text": "정지조건 홈가공경로동작 연속원운동의 정지 / 속행 연속원운동의 정지 / 속행 운전 Mode 의 절환 정지조건 홈가공경로동작 정지 (GCC=0) 속행 (GCC=1) 운전 Mode 의 절환 Servo Alarm 즉시정지 즉시정지 즉시정지 Alarm 해제 후 절환 가능 Spindle Alarm 즉시정지 즉시정지 즉시정지 Alarm 해제 후 절환 가능 System Alarm 즉시정지 즉시정지 즉시정지 전원 재투입이 필요",
+    "table": {
+      "columns": [
+        "정지조건",
+        "홈가공경로동작",
+        "연속원운동의 정지 / 속행",
+        "연속원운동의 정지 / 속행",
+        "운전 Mode 의 절환"
+      ],
+      "rows": [
+        [
+          "정지조건",
+          "홈가공경로동작",
+          "정지 (GCC=0)",
+          "속행 (GCC=1)",
+          "운전 Mode 의 절환"
+        ],
+        [
+          "Servo Alarm",
+          "즉시정지",
+          "즉시정지",
+          "즉시정지",
+          "Alarm 해제 후 절환 가능"
+        ],
+        [
+          "Spindle Alarm",
+          "즉시정지",
+          "즉시정지",
+          "즉시정지",
+          "Alarm 해제 후 절환 가능"
+        ],
+        [
+          "System Alarm",
+          "즉시정지",
+          "즉시정지",
+          "즉시정지",
+          "전원 재투입이 필요"
+        ]
+      ],
+      "html": "<table><tbody><tr><th rowspan=\"2\">정지조건</th><th rowspan=\"2\">홈가공경로동작</th><th colspan=\"2\">연속원운동의 정지 / 속행</th><th rowspan=\"2\">운전 Mode 의 절환</th></tr><tr><th>정지 (GCC=0)</th><th>속행 (GCC=1)</th></tr><tr><td>Servo Alarm</td><td>즉시정지</td><td>즉시정지</td><td>즉시정지</td><td>Alarm 해제 후 절환 가능</td></tr><tr><td>Spindle Alarm</td><td>즉시정지</td><td>즉시정지</td><td>즉시정지</td><td>Alarm 해제 후 절환 가능</td></tr><tr><td>System Alarm</td><td>즉시정지</td><td>즉시정지</td><td>즉시정지</td><td>전원 재투입이 필요</td></tr></tbody></table>",
+      "note": "3. *1: 기능이 유효로 된 축만 정지합니다 . *2: 1 축이라도 유효로 되면 모든 축이 정지합니다 . ㆍ연속 원운동 개시위치로의 이동 , 연속 원운동 종료 후의 홈가공 경로 프로그램 종료위치로의 이동은 아래의 정지조건인 경우에 정지합니다 . ㆍ이송속도 지정ㆍ Pitch Override 이송속도의 지정"
+    },
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=5",
+    "note": "3. *1: 기능이 유효로 된 축만 정지합니다 . *2: 1 축이라도 유효로 되면 모든 축이 정지합니다 . ㆍ연속 원운동 개시위치로의 이동 , 연속 원운동 종료 후의 홈가공 경로 프로그램 종료위치로의 이동은 아래의 정지조건인 경우에 정지합니다 . ㆍ이송속도 지정ㆍ Pitch Override 이송속도의 지정"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0005_c02",
+    "chunk_type": "text",
+    "page": 5,
+    "section_path": [],
+    "text": "ㆍ Parameter  GCC(NO.3452#4)=0 의 경우는 홈가공 경로 프로그램의 축 이동 정지에 의해 연속 원운동은 정지하 지만 , 홈가공 경로 프로그램의 축 이동과 연속 원운동은 독립적으로 동작하므로 홈가공 경로 프로그램의 정지 위치와 pitch 로부터 환산한 연속 원운동의 위치에 엄밀하게는 정지하지 않습니다 . ㆍ Mode 를 수동 Mode 로 절환한 후 수동으로 이동할 수 있는 축은 연속 원운동을 수행하는 축을 제외합니다 . ㆍ연속 원운동이 속행 (Parameter  GCC(No.3452#4)=1) 인 경우는 연속 원운동은 계속 움직이므로 반경의 변동은 없습니다 .",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=5"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0005_c03",
+    "chunk_type": "table",
+    "page": 5,
+    "section_path": [],
+    "text": "Reset 감속정지 Machine Lock 감속정지 Servo Off 감속정지 Interlock 감속정지 OT Alarm 감속정지 DS Alarm 감속정지 비상정지 즉시정지 PC 관련 Alarm 즉시정지 Servo Alarm 즉시정지 Spindle Alarm 즉시정지 System Alarm 즉시정지",
+    "table": {
+      "columns": [
+        "Reset",
+        "감속정지"
+      ],
+      "rows": [
+        [
+          "Machine Lock",
+          "감속정지"
+        ],
+        [
+          "Servo Off",
+          "감속정지"
+        ],
+        [
+          "Interlock",
+          "감속정지"
+        ],
+        [
+          "OT Alarm",
+          "감속정지"
+        ],
+        [
+          "DS Alarm",
+          "감속정지"
+        ],
+        [
+          "비상정지",
+          "즉시정지"
+        ],
+        [
+          "PC 관련 Alarm",
+          "즉시정지"
+        ],
+        [
+          "Servo Alarm",
+          "즉시정지"
+        ],
+        [
+          "Spindle Alarm",
+          "즉시정지"
+        ],
+        [
+          "System Alarm",
+          "즉시정지"
+        ]
+      ],
+      "html": "<table><tbody><tr><td>Reset</td><td>감속정지</td></tr><tr><td>Machine Lock</td><td>감속정지</td></tr><tr><td>Servo Off</td><td>감속정지</td></tr><tr><td>Interlock</td><td>감속정지</td></tr><tr><td>OT Alarm</td><td>감속정지</td></tr><tr><td>DS Alarm</td><td>감속정지</td></tr><tr><td>비상정지</td><td>즉시정지</td></tr><tr><td>PC 관련 Alarm</td><td>즉시정지</td></tr><tr><td>Servo Alarm</td><td>즉시정지</td></tr><tr><td>Spindle Alarm</td><td>즉시정지</td></tr><tr><td>System Alarm</td><td>즉시정지</td></tr></tbody></table>"
+    },
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=5"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0005_c04",
+    "chunk_type": "text",
+    "page": 5,
+    "section_path": [],
+    "text": "가공 시의 이송속도는 연속 원운동의 이송속도를 지정합니다 . 이 속도는 지령속도로 표시됩니다 . 연속 원운동 이송속도 Override 연속 원운동의 지령속도에 대해 이송속도 Override 신호 (*FV0 ~ *FV7) 는 효과가 없습니다 . 연속 원운동 이송 속도 Override 신호 (*CGROV7 ~ *CGROV0) 를 사용합니다 . 연속 원운동 이송속도 Override 가 0% 인 경우는 홈 가공 경로의 움직임과는 독립적으로 연속 원운동의 움직임을 정지시켜 둘 수 있습니다 . (3) 이송속도 Override 홈가공 경로의 속도는 pitch 지령에 의해 결정됩니다 . 이송속도 Override 신호 (*FV0 ~ *FV7) 는 홈가공 경로의 속도에 대해 유효합니다 . 이에 따라 연속 원운동의 속도와 홈가공 경로의 속도는 독립적으로 변경할 수 있 습니다 . 또한 홈가공 경로의 속도는 Override  Cancel 신호 (OVC), 제 2 이송속도 Override 신호 ( 옵션 기능 ) 가 유효합니 다 . (4) Dry Run Dry Run 시에는 표 3.6 (b) 와 같습니다 . 홈가공 경로의 속도에는 Dry Run 은 무효입니다 .",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=5"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0006_c01",
+    "chunk_type": "table",
+    "page": 6,
+    "section_path": [],
+    "text": "속도 Override 홈가공 경로의 속도 연속원운동의 이송속도 F×pitch/2 π R 이송속도 Override 연속원운동의 이송속도 Dry Run 속도 (Parameter No.1410) 수동 급속이송 선택신호 (RT) 연속원운동의 이송속도 Dry Run 속도 (Parameter No.1410) 0 1 연속원운동의 이송속도 Dry Run 속도 (Parameter No.1410) JV JVmax",
+    "table": {
+      "columns": [
+        "",
+        "속도",
+        "Override"
+      ],
+      "rows": [
+        [
+          "홈가공 경로의 속도",
+          "연속원운동의 이송속도 F×pitch/2 π R",
+          "이송속도 Override"
+        ],
+        [
+          "연속원운동의 이송속도",
+          "Dry Run 속도 (Parameter No.1410)",
+          "수동 급속이송 선택신호 (RT)"
+        ],
+        [
+          "연속원운동의 이송속도",
+          "Dry Run 속도 (Parameter No.1410)",
+          "0 1"
+        ],
+        [
+          "연속원운동의 이송속도",
+          "Dry Run 속도 (Parameter No.1410)",
+          "JV JVmax"
+        ]
+      ],
+      "html": "<table><caption><div class=\"caption\">표 3.6 (b)</div></caption><tbody><tr><td></td><th>속도</th><th>Override</th></tr><tr><td>홈가공 경로의 속도</td><td>연속원운동의 이송속도 F×pitch/2 π R</td><td>이송속도 Override</td></tr><tr><td rowspan=\"3\">연속원운동의 이송속도</td><td rowspan=\"3\">Dry Run 속도 (Parameter No.1410)</td><td>수동 급속이송 선택신호 (RT)</td></tr><tr><td>0 1</td></tr><tr><td>JV JVmax</td></tr></tbody></table>",
+      "note": "표 3.6 (b) JV ： 수동 이송속도 Override JVmax: 수동 이송속도 Override 의 최댓값"
+    },
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=6",
+    "note": "표 3.6 (b) JV ： 수동 이송속도 Override JVmax: 수동 이송속도 Override 의 최댓값"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0006_c02",
+    "chunk_type": "text",
+    "page": 6,
+    "section_path": [],
+    "text": "(5) 속도의 표시 ㆍ지령속도의 표시는 연속 원운동의 지령속도를 표시합니다 . ㆍ실속도 표시는 연속 원운동의 속도와 홈가공 경로 속도의 합성속도를 표시합니다 . (6) 최대 절삭이송속도에 의한 Clamp 연속 원운동의 이송속도지령이 최대 절삭이송속도 (Parameter  No.1430) 를 초과하는 경우에는 연속 원운동의 이송속도지령을 Clamp 하고 홈가공 경로의 속도를 계산합니다 . 또한 각 Override 가 적용된 연속 원운동의 이 송속도 및 홈가공 경로의 속도를 최대 절삭이송속도에 의해 Clamp 합니다 . 제한사항 ㆍ Mirror Image Mirror Image 는 홈가공 경로의 지령에 대해서만 유효합니다 . 연속 원운동 및 연속 원운동 개시위치로의 이동 , 연속 원운동 종료 후의 홈가공 경로 프로그램 종료위치로의 이 동에는 Mirror Image 가 적용되지 않습니다 . ㆍ남은 이동량 연속 원운동 개시위치로의 이동 , 연속 원운동의 이동 , 연속 원운동 종료 후의 홈가공 경로 프로그램 종료위치로 의 이동은 남은 이동량 (Position 화면 등 ) 에는 반영되지 않습니다 . ㆍ Work 좌표계와 기계좌표계 연속 원운동 개시위치로의 이동 , 연속 원운동의 이동 , 연속 원운동 종료 후의 홈가공 경로 프로그램 종료위치로 의 이동은 Work 좌표계에 반영되지 않습니다 . Work 좌표계는 어디까지나 홈가공 경로 프로그램 좌표계입니다 . 단 , 기계좌표계에는 본 이동이 반영됩니다 . ㆍ축이동 중 신호 연속 원운동에 의한 축이동에 의해 축이동 중 신호는 변화하지 않습니다 .",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=6"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0006_c03",
+    "chunk_type": "text",
+    "page": 6,
+    "section_path": [],
+    "text": "연속 원운동에 의한 홈가공 Mode 중 신호를 사용하십시오 . ㆍ그래픽 표시 가공 중인 프로그램의 공구궤적은 Work 좌표이므로 홈가공 지령경로가 그려집니다 . ㆍ재개기능 프로그램 재개 , 공구 대피 & 복귀 등의 재개기능에 의해 홈가공 경로 프로그램 도중에 연속 원운동에 의한 홈가 공을 개시할 수는 없습니다 . ㆍ역행 (Retrace) 연속 원운동에 의한 홈가공 Mode 중에는 사용할 수 없습니다 . ㆍ AI 윤곽제어 연속 원운동에 의한 홈가공 Mode 중에는 AI 윤곽제어는 무효입니다 . AI 윤곽제어 중에 연속 원운동에 의한 홈가공 이 지령된 경우는 AI 윤곽제어는 일시적으로 Cancel 됩니다 . 연속 원운동에 의한 홈가공 Mode 가 Cancel 되면 AI 윤 곽제어는 On 으로 복귀합니다 . 또한 AI 윤곽제어가 무효로 되면 선독 보간 전 가감속 , 가가속도제어 / 최적 Torque 가감속도 무효가 됩니다 .",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=6"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0007_c01",
+    "chunk_type": "text",
+    "page": 7,
+    "section_path": [],
+    "text": "예제 M3 S2000 ; 주축기동 M □□ ; \" 소구경 Peck Drilling Cycle\" Mode 절환 G90  G99  G83  X_  Y_  Z_  R_  Q_  F_  I_  K_  P_  ; \" 소구경 Peck Drilling Cycle\" 지령 X_ Y_ ; 구멍 위치를 바꾸어 실행 : : G80 ; \" 소구경 Peck Drilling Cycle\" Mode Cancel 5.1.8 Tapping Cycle (G84) Tapping 가공을 할 수 있습니다 .",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=7"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0007_c02",
+    "chunk_type": "figure",
+    "page": 7,
+    "section_path": [],
+    "text": "",
+    "table": null,
+    "figure": {
+      "image_path": "images/ko/p0007_f01.png",
+      "bbox": [
+        69.29913363847157,
+        278.4884338378906,
+        539.0519056896236,
+        548.1298828125
+      ],
+      "note": "Hole 바닥에서 주축이 역회전하면 Tapping Cycle 이 실행됩니다 . Format 해설"
+    },
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=7",
+    "note": "Hole 바닥에서 주축이 역회전하면 Tapping Cycle 이 실행됩니다 . Format 해설"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0007_c03",
+    "chunk_type": "text",
+    "page": 7,
+    "section_path": [],
+    "text": "·동작 주축을 정회전시켜 절입한 후 구멍바닥에서 역회전하여 도피하면서 나사를 만듭니다 . 주의 Tapping 동작 중에는 이송속도 Override 는 무시되고 Feed  Hold 를 걸어도 복귀 동작이 완료할 때까지 기계는 정지하지 않습니다 . ·주축의 회전 G84 를 지령하기 전에 보조기능 (M Code) 으로 주축을 회전해 주십시오 . 구멍 위치 및 Initial  Level 에서 R 점 Level 까지의 거리가 짧은 Drilling 이 연속하는 하는 경우 Hole 의 절삭 동작에 들 어가기 전까지 주축이 정상회전에 이르지 않을 수 있습니다 . 그럴 경우 , 반복횟수 K 지정을 하지 말고 G04 에 의한 Dwell 을 각 Drilling 동작 전에 지령하여 시간여유를 줄 필요가 있습니다 . 기계에 따라서는 상기내용을 고려하지 않 아도 되는 경우가 있으므로 기계 Maker 측에서 발행한 설명서를 참조해 주십시오 .",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=7"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0008_c01",
+    "chunk_type": "text",
+    "page": 8,
+    "section_path": [],
+    "text": "5.Program 을 간단하게 하는 기능 PROGRAMMING ·보조기능 G84 지령과 M  Code 를 동일 Block 으로 지령하면 최초 위치결정시에 M  Code 가 실행됩니다 . 반복횟수 K 가 지령되 어 있는 경우 최초 1 회만 상기의 동작을 실행하고 두번째 이후에는 M Code 는 실행하지 않습니다 . ·공구길이보정 Drilling 용 고정 Cycle 중에 공구길이보정 (G43,  G44,  G49) 을 지령했을 경우 R 점으로의 위치결정 이후에 보정이 걸 립니다 . 제한사항 ·축의 절환 Drilling 축의 절환은 Drilling 용 고정 Cycle 을 일단 Cancel 하고 나서 실행하여 주십시오 . · Drilling X, Y, Z, R, 부가축의 어느축도 포함하지 않는 Block 에서는 Drilling 은 하지 않습니다 . · P P 는 Drilling 동작을 하는 Block 에서 지령하여 주십시오 . Drilling 동작이 실행되지 않는 Block 에서 지령해도 Modal Data 로 기억되지 않습니다 . · Cancel 01 Group 의 G Code(G00~G03 등 ) 를 G84 와 동일 Block 으로 지령하지 마십시오 . G84 가 Cancel 됩니다 . 예제 M3 S100 ; 주축기동 G90 G99 G84 X300. Y-250. Z-150. R-120. P300 F120. ; 위치결정 후 나사구멍 1 가공 , R 점 Level 복귀 Y-550. ; 위치결정 후 나사구멍 2 가공 , R 점 Level 복귀 Y-750. ; 위치결정 후 나사구멍 3 가공 , R 점 Level 복귀",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=8"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0008_c02",
+    "chunk_type": "text",
+    "page": 8,
+    "section_path": [],
+    "text": "X1000. ; 위치결정 후 나사구멍 4 가공 , R 점 Level 복귀 Y-550. ; 위치결정 후 나사구멍 5 가공 , R 점 Level 복귀 G98 Y-750. ; 위치결정 후 나사구멍 6 가공 , Initial Level 복귀 G80 G28 G91 X0 Y0 Z0 ; 원점복귀 M5  ; 주축정지 5.1.9 Boring Cycle (G85) Boring 가공에 사용합니다 .",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=8"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0009_c01",
+    "chunk_type": "figure",
+    "page": 9,
+    "section_path": [],
+    "text": "",
+    "table": null,
+    "figure": {
+      "image_path": "images/ko/p0009_f01.png",
+      "bbox": [
+        70.30478905415376,
+        100.07160949707031,
+        538.916036374905,
+        320.7518005371094
+      ],
+      "note": "Format 해설"
+    },
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=9",
+    "note": "Format 해설"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0009_c02",
+    "chunk_type": "text",
+    "page": 9,
+    "section_path": [],
+    "text": "·동작 X, Y 축 위치결정 후 R 점 Level 까지 급속이송으로 이동합니다 그 후 R 점 Level 에서 Z 점까지 Drilling 가공을 합니다 . Z 점에 도달 후 R 점까지 절삭이송으로 복귀합니다 . ·주축의 회전 G85 를 지령하기 전에 보조기능 (M Code) 으로 주축을 회전해 주십시오 . ·보조기능 G85 지령과 M  Code 를 동일 Block 으로 지령하면 최초 위치결정시에 M  Code 가 실행됩니다 . 반복횟수 K 가 지령 되어 있는 경우 최초 1 회만 상기의 동작을 실행하고 두번째 이후에는 M Code 는 실행하지 않습니다 . ·공구길이보정 Drilling 용 고정 Cycle 중에 공구길이보정 (G43,  G44,  G49) 을 지령했을 경우 R 점으로의 위치결정 이후에 보정이 걸 립니다 . 제한사항 ·축의 절환 Drilling 축의 절환은 Drilling 용 고정 Cycle 을 일단 Cancel 하고 나서 실행하여 주십시오 . · Drilling X, Y, Z, R, 부가축의 어느축도 포함하지 않는 Block 에서는 Drilling 은 하지 않습니다 . · Cancel 01 Group 의 G Code(G00~G03 등 ) 를 G85 와 동일 Block 에서 지령하지 마십시오 . G85 가 Cancel 됩니다 . ·공구위치 Offset Drilling 용 고정 Cycle Mode 중에는 공구위치 Offset 은 무시됩니다 . 예제 M3 S100 ; G90 G99 G85 X300. Y-250. Z-150. R-120. F120. ; 위치결정 후 구멍 1 가공 , R 점 Level 복귀",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=9"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0009_c03",
+    "chunk_type": "text",
+    "page": 9,
+    "section_path": [],
+    "text": "Y-550. ; 위치결정 후 구멍 2 가공 , R 점 Level 복귀 주축기동 .",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=9"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0010_c01",
+    "chunk_type": "text",
+    "page": 10,
+    "section_path": [],
+    "text": "기능 PROGRAMMING Y-750. ; 위치결정 후 구멍 3 가공 , R 점 Level 복귀 X1000. ; 위치결정 후 구멍 4 가공 , R 점 Level 복귀 Y-550. ; 위치결정 후 구멍 5 가공 , R 점 Level 복귀 G98 Y-750. ; 위치결정 후 구멍 6 가공 , Initial Level 복귀 G80 G28 G91 X0 Y0 Z0 ; 원점복귀 M5 ; 주축정지 5.1.10 Boring Cycle (G86)",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=10"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0010_c02",
+    "chunk_type": "figure",
+    "page": 10,
+    "section_path": [],
+    "text": "",
+    "table": null,
+    "figure": {
+      "image_path": "images/ko/p0010_f01.png",
+      "bbox": [
+        69.2090036405013,
+        237.4345703125,
+        539.0408118290229,
+        481.6842956542969
+      ],
+      "note": "Boring 가공에 사용합니다 . Format 해설"
+    },
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=10",
+    "note": "Boring 가공에 사용합니다 . Format 해설"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0010_c03",
+    "chunk_type": "text",
+    "page": 10,
+    "section_path": [],
+    "text": "·동작 X, Y 축을 위치결정 후 R 점 Level 까지 급속이송으로 이동합니다 . 그 후 R 점 Level 에서 Z 점까지 Drilling 가공을 합니다 . Hole 바닥에서 주축이 정지한 후 도피는 급속이송으로 이동합니다 . ·주축의 회전 G86 를 지령하기 전에 보조기능 (M Code) 으로 주축을 회전해 주십시오 . Drill 위치 및 Initial  Level 에서 R 점 Level 까지의 거리가 짧은 Drilling 이 연속하는 하는 경우 Hole 의 절삭동작에 들어 가기 전까지 주축이 정상회전에 이르지 않는 경우가 있습니다 . 이러한 경우 , 반복횟수 K 지정을 하지말고 G04 에 의한 Dwell 을 각 Drilling 동작 전에 지령하여 시간여유을 줄 필요가 있습니다 . 기계에 따라서는 상기를 고려하지 않 아도 되는 경우가 있으므로 기계 Maker 측에서 발행한 설명서를 참조해 주십시오 . ·보조기능 G86 지령과 M  Code 를 동일 Block 으로 지령하면 최초 위치결정시에 M  Code 가 실행됩니다 . 반복횟수 K 가 지령되 어 있는 경우 최초 1 회만 상기의 동작을 실행하고 두번째 이후에는 M Code 는 실행하지 않습니다 . ·공구길이보정 Drilling 용 고정 Cycle 중에 공구길이보정 (G43,  G44,  G49) 을 지령했을 경우 R 점으로의 위치결정 이후에 보정이 걸립니 다 .",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=10"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0011_c01",
+    "chunk_type": "text",
+    "page": 11,
+    "section_path": [],
+    "text": "제한사항 ·축의 절환 Drilling 축의 절환은 Drilling 용 고정 Cycle 을 일단 Cancel 하고 나서 실행하여 주십시오 . · Drilling X, Y, Z, R, 부가축의 어느축도 포함하지 않는 Block 에서는 Drilling 은 하지 않습니다 . · Cancel 01 Group 의 G Code(G00~G03 등 ) 를 G86 와 동일 Block 에서 지령하지 마십시오 . G86 가 Cancel 됩니다 . ·공구위치 Offset Drilling 용 고정 Cycle Mode 중에는 공구위치 Offset 은 무시됩니다 . 예제 M3 S2000 ; 주축기동 G90 G99 G86 X300. Y-250. Z-150. R-100. F120. ; 위치결정 후 구멍 1 가공 , R 점 Level 복귀 Y-550. ; 위치결정 후 구멍 2 가공 , R 점 Level 복귀 Y-750. ; 위치결정 후 구멍 3 가공 , R 점 Level 복귀 X1000. ; 위치결정 후 구멍 4 가공 , R 점 Level 복귀 Y-550. ; 위치결정 후 구멍 5 가공 , R 점 Level 복귀 G98 Y-750. ; 위치결정 후 구멍 6 가공 , Initial Level 복귀 G80 G28 G91 X0 Y0 Z0    ; 원점복귀 M5 ; 주축정지 5.1.11 Back Boring Cycle (G87)",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=11"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0011_c02",
+    "chunk_type": "figure",
+    "page": 11,
+    "section_path": [],
+    "text": "",
+    "table": null,
+    "figure": {
+      "image_path": "images/ko/p0011_f01.png",
+      "bbox": [
+        105.65715879990752,
+        461.5649719238281,
+        539.1402908427604,
+        729.4048461914062
+      ],
+      "note": "정도가 좋은 가공을 실행합니다 . Format 해설"
+    },
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=11",
+    "note": "정도가 좋은 가공을 실행합니다 . Format 해설"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0011_c03",
+    "chunk_type": "text",
+    "page": 11,
+    "section_path": [],
+    "text": "X,  Y 축 방향의 위치결정 후 정회전 위치에 주축이 정지하고 인선과 역방향으로 Shift 한 후 급속이송으로 Hole 바닥 (R 점 ) 에 위치결정 합니다 .",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=11"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0012_c01",
+    "chunk_type": "text",
+    "page": 12,
+    "section_path": [],
+    "text": "이 위치에서 인선 방향으로 Shift 하여 주축 정회전 동작을 실행하고 Z 축 정방향 Z 점까지 가공합니다 . 이 위치에서 다시 정회전 위치에 주축을 정지시킨 후 인선과 역방향으로 Shift 하여 Initial  Level 에 복귀 후 인선 방향 으로 Shift 하여 주축 정회전을 실행하고 다음 Block 의 동작으로 옮깁니다 . ·주축의 회전 G87 를 지령하기 전에 보조기능 (M Code) 으로 주축을 회전해 주십시오 . 구멍위치 및 Initial  Level 에서 R 점 Level 까지의 거리가 짧은 Drilling 이 연속하는 하는 경우 구멍의 절삭동작에 들어 가기 전까지 주축이 정상회전에 이르지 않는 경우가 있습니다 . 이러한 경우 , 반복횟수 K 지정을 하지않고 G04 에 의한 Dwell 을 각 Drilling 동작 전에 지령하여 시간여유를 줄 필요가 있습니다 . 기계에 따라서는 상기를 고려하지 않 아도 되는 경우가 있으므로 기계 Maker 측에서 발행한 설명서를 참조해 주십시오 . ·보조기능 G87 지령과 M  Code 를 동일 Block 으로 지령하면 최초 위치결정시에 M  Code 가 실행됩니다 . 반복횟수 K 가 지령되 어 있는 경우 최초 1 회만 상기의 동작을 실행하고 두번째 이후에는 M Code 는 실행하지 않습니다 . ·공구길이보정 Drilling 용 고정 Cycle 중에 공구길이보정 (G43,  G44,  G49) 을 지령했을 경우 R 점으로의 위치결정 이후에 보정이 걸 립니다 . 제한사항 ·축의 절환",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=12"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0012_c02",
+    "chunk_type": "text",
+    "page": 12,
+    "section_path": [],
+    "text": "Drilling 축의 절환은 Drilling 용 고정 Cycle 을 일단 Cancel 하고 나서 실행하여 주십시오 . · Drilling X, Y, Z, R, 부가축의 어느축도 포함하지 않는 Block 에서는 Drilling 은 하지 않습니다 . · P, Q Q 의 값은 반드시 양의 값으로 지정합니다 . 음의 값으로 지령하여도 부호는 무시됩니다 . Shift 의 방향은 Parameter(No.5148) 에 설정합니다 . P,  Q 는 Drilling 동작을 하는 Block 에서 지령하여 주십시오 .  Drilling 동작이 실행되지 않는 Block 에서 지령해도 Modal Data 로 기억되지 않습니다 . 주의 Q(Hole 바닥에서 Shift 량 ) 는 Drilling 용 고정 Cycle 중에서는 Modal 정보로 G73,  G83 의 절입량으로도 사용하기 때문에 주의해 주십시오 . · Cancel 01 Group 의 G Code(G00~G03 등 ) 를 G87 와 동일 Block 에서 지령하지 마십시오 . G87 가 Cancel 됩니다 . ·공구위치 Offset Drilling 용 고정 Cycle Mode 중에는 공구위치 Offset 은 무시됩니다 . 예제 M3 S500 ; 주축기동 G90 G87 X300. Y-250. 위치결정 후 구멍 1 가공 Z-150. R-120. Q5. Initial Level 로 Orientation 후 5 mm Shift P1000 F120. ; Z 점에서 1 초 정지 Y-550. ; 위치결정 후 구멍 2 가공 Y-750. ; 위치결정 후 구멍 3 가공 X1000. ;",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=12"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0012_c03",
+    "chunk_type": "text",
+    "page": 12,
+    "section_path": [],
+    "text": "위치결정 후 구멍 4 가공 Y-550. ; 위치결정 후 구멍 5 가공 Y-750. ; 위치결정 후 구멍 6 가공 G80 G28 G91 X0 Y0 Z0 ; 원점복귀 M5  ; 주축정지",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=12"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0013_c01",
+    "chunk_type": "text",
+    "page": 13,
+    "section_path": [],
+    "text": "5.1.12 Boring Cycle (G88) Boring 가공에 사용합니다 . Format G88 X_ Y_ Z_ R_ P_ F_ K_ ; X_ Y_ : Hole 위치 Data Z_ : R 점에서 Hole 바닥까지의 거리 R_ : Initial Level 에서 R 점까지의 거리 P_ : Hole 바닥에서 Dwell 시간 F_ : 절삭이송속도",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=13"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0013_c02",
+    "chunk_type": "figure",
+    "page": 13,
+    "section_path": [],
+    "text": "",
+    "table": null,
+    "figure": {
+      "image_path": "images/ko/p0013_f01.png",
+      "bbox": [
+        119.56677989422076,
+        261.10400390625,
+        255.16254256382888,
+        414.60296630859375
+      ],
+      "note": "해설"
+    },
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=13",
+    "note": "해설"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0013_c03",
+    "chunk_type": "figure",
+    "page": 13,
+    "section_path": [],
+    "text": "",
+    "table": null,
+    "figure": {
+      "image_path": "images/ko/p0013_f02.png",
+      "bbox": [
+        353.51641330181354,
+        259.7762756347656,
+        488.96464895978073,
+        412.0946960449219
+      ],
+      "note": "K_ : 반복횟수 ( 필요할 경우 ) G88(G98) G88(G99)"
+    },
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=13",
+    "note": "K_ : 반복횟수 ( 필요할 경우 ) G88(G98) G88(G99)"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0013_c04",
+    "chunk_type": "text",
+    "page": 13,
+    "section_path": [],
+    "text": "·동작 X, Y 축을 위치결정 후 R 점 Level 까지 급속이송으로 이동합니다 . 그 후 R 점 Level 에서 Z 점까지 Boring 가공을 합니다 . 그 후 구멍바닥에서 Dwell 를 실행한 후 주축이 정지하고 휴지상태가 됩니다 . 따라서 , 이 때 수동 Mode 로 전환하여 수동으로 공구를 작동시킬 수가 있습니다 . 어떠한 수동동작을 실행해도 상관없지만 최종적으로는 공구를 구멍에서 도피한 상태로 해 놓는 것이 안전합니다 . 가공을 재개할 때에는 DNC 운전 Mode 또는 Memory Mode 로 해서 기동을 시키면 G98,  G99 에 따라 Initial  Level,  R 점 Level 로 복귀한 후 주축 정회전하고 그후 다음 Block 의 Program 지령에 따라 동작을 재개합니다 . ·주축의 회전 G88 를 지령하기 전에 보조기능 (M Code) 으로 주축을 회전해 주십시오 . ·보조기능 G88 지령과 M  Code 를 동일 Block 으로 지령하면 최초 위치결정시에 M  Code 가 실행됩니다 . 반복횟수 K 가 지령되 어 있는 경우 최초 1 회만 상기의 동작을 실행하고 두번째 이후에는 M Code 는 실행하지 않습니다 . ·공구길이보정 Drilling 용 고정 Cycle 중에 공구길이보정 (G43,  G44,  G49) 을 지령했을 경우 R 점으로의 위치결정 이후에 보정이 걸립니 다 . 제한사항 ·축의 절환 Drilling 축의 절환은 Drilling 용 고정 Cycle 을 일단 Cancel 하고 나서 실행하여 주십시오 . · Drilling",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=13"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0013_c05",
+    "chunk_type": "text",
+    "page": 13,
+    "section_path": [],
+    "text": "X, Y, Z, R, 부가축의 어느축도 포함하지 않는 Block 에서는 Drilling 은 하지 않습니다 .",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=13"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0014_c01",
+    "chunk_type": "text",
+    "page": 14,
+    "section_path": [],
+    "text": "5.Program 을 간단하게 하는 기능 PROGRAMMING · P P 는 Drilling 동작을 하는 Block 에서 지령하여 주십시오 .  Drilling 동작이 실행되지 않는 Block 에서 지령해도 Modal Data 로 기억되지 않습니다 . · Cancel 01 Group 의 G Code(G00~G03 등 ) 를 G88 와 동일 Block 에서 지령하지 마십시오 . G88 가 Cancel 됩니다 . ·공구위치 Offset Drilling 용 고정 Cycle Mode 중에는 공구위치 Offset 은 무시됩니다 . 예제 M3 S2000 ; 주축기동 G90 G99 G88 X300. Y-250. Z-150. R-100. P1000 F120. ; 위치결정 후 구멍 1 가공 , R 점 Level 복귀 , Y-550. ; 구멍바닥에서 1 초 정지 위치결정 후 구멍 2 가공 , R 점 Level 복귀 Y-750. ; 위치결정 후 구멍 3 가공 , R 점 Level 복귀 X1000. ; 위치결정 후 구멍 4 가공 , R 점 Level 복귀 Y-550. ; 위치결정 후 구멍 5 가공 , R 점 Level 복귀 G98 Y-750. ; 위치결정 후 구멍 6 가공 , Initial Level 복귀 G80 G28 G91 X0 Y0 Z0 ; 원점복귀 M5 ; 주축정지 5.1.13 Boring Cycle (G89)",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=14"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0014_c02",
+    "chunk_type": "figure",
+    "page": 14,
+    "section_path": [],
+    "text": "",
+    "table": null,
+    "figure": {
+      "image_path": "images/ko/p0014_f01.png",
+      "bbox": [
+        69.0218861757829,
+        429.8975830078125,
+        539.1552248858766,
+        662.8961791992188
+      ],
+      "note": "Boring 가공에 사용합니다 . Format 해설"
+    },
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=14",
+    "note": "Boring 가공에 사용합니다 . Format 해설"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0014_c03",
+    "chunk_type": "text",
+    "page": 14,
+    "section_path": [],
+    "text": "·동작 G85 와 같지만 Hole 바닥에서 Dwell 를 실행합니다 . ·주축의 회전 G89 를 지령하기 전에 보조기능 (M Code) 으로 주축을 회전해 주십시오 .",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=14"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0015_c01",
+    "chunk_type": "text",
+    "page": 15,
+    "section_path": [],
+    "text": "·보조기능 G89 지령과 M  Code 를 동일 Block 으로 지령하면 최초 위치결정시에 M  Code 가 실행됩니다 . 반복횟수 K 가 지령되 어 있는 경우 최초 1 회만 상기의 동작을 실행하고 두번째 이후에는 M Code 는 실행하지 않습니다 . ·공구길이보정 Drilling 용 고정 Cycle 중에 공구길이보정 (G43,  G44,  G49) 을 지령했을 경우 R 점으로의 위치결정 이후에 보정이 걸립니 다 . 제한사항 ·축의 절환 Drilling 축의 절환은 Drilling 용 고정 Cycle 을 일단 Cancel 하고 나서 실행하여 주십시오 . · Drilling X, Y, Z, R, 부가축의 어느축도 포함하지 않는 Block 에서는 Drilling 은 하지 않습니다 . · P P 는 Drilling 동작을 하는 Block 에서 지령하여 주십시오 . Drilling 동작이 실행되지 않는 Block 에서 지령해도 Modal Data 로 기억되지 않습니다 . · Cancel 01 Group 의 G Code(G00~G03 등 ) 를 G89 와 동일 Block 에서 지령하지 마십시오 . G89 가 Cancel 됩니다 . ·공구위치 Offset Drilling 용 고정 Cycle Mode 중에는 공구위치 Offset 은 무시됩니다 . 예제 M3 S100 ; 주축기동 G90 G99 G89 X300. Y-250. Z-150. R-120. P1000 F120. ; Y-550. ; 위치결정 후 구멍 1 가공 , R 점 Level 복귀 , 구멍바닥에서 1 초 정지 위치결정 후 구멍 2 가공 , R 점 Level 복귀",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=15"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0015_c02",
+    "chunk_type": "text",
+    "page": 15,
+    "section_path": [],
+    "text": "Y-750. ; 위치결정 후 구멍 3 가공 , R 점 Level 복귀 X1000. ; 위치결정 후 구멍 4 가공 , R 점 Level 복귀 Y-550. ; 위치결정 후 구멍 5 가공 , R 점 Level 복귀 G98 Y-750. ; 위치결정 후 구멍 6 가공 , Initial Level 복귀 G80 G28 G91 X0 Y0 Z0 ; 원점복귀 M5 ; 주축정지 5.1.14 Drilling 용 고정 Cycle Cancel (G80) Drilling 용 고정 Cycle 을 Cancel 합니다 . Format G80  ; 해설 모든 Drilling 용 고정 Cycle 을 Cancel 하고 이후 통상의 동작을 실행하게 합니다 . R 점 Level, Z 점도 Cancel 됩니다 . 그 외의 Drill 가공 Data 도 모두 Cancel 됩니다 . 예제 M3 S100 ; 주축기동 G90 G99 G88 X300. Y-250. Z-150. R-120. F120. ; 위치결정 후 구멍 1 가공 , R 점 Level 복귀 Y-550. ; 위치결정 후 구멍 2 가공 , R 점 Level 복귀 Y-750. ; 위치결정 후 구멍 3 가공 , R 점 Level 복귀 - 63 -",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=15"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0016_c01",
+    "chunk_type": "text",
+    "page": 16,
+    "section_path": [],
+    "text": "5.Program 을 간단하게 하는 기능 PROGRAMMING X1000. ; 위치결정 후 구멍 4 가공 , R 점 Level 복귀 Y-550. ; 위치결정 후 구멍 5 가공 , R 점 Level 복귀 G98 Y-750. ; 위치결정 후 구멍 6 가공 , Initial Level 복귀 G80 G28 G91 X0 Y0 Z0    ; 원점복귀 , 고정 Cycle Cancel M5  ; 주축정지 5.1.15 Drilling 용 고정 Cycle 의 예제 Offset 번호 11 에 +200.0, Offset 번호 15 에 +190.0, Offset 번호 31 에 +150.0 을 Offset 량으로서 각각 설정합니 다 . Program 예 ; N001 G92 X0 Y0 Z0 ; N002  G90  G00  Z250.0  T11  M6  ; N003  G43  Z0  H11  ; N004  S30  M3  ; N005  G99  G81  X400.0  Y-350.0  Z-153.0  R-97.0  F120  ; N006  Y-550.0  ; N007  G98  Y-750.0  ; N008  G99  X1200.0  ; N009  Y-550.0  ; N010  G98  Y-350.0  ; N011  G00  X0  Y0  M5  ; N012  G49  Z250.0  T15  M6  ; N013  G43  Z0  H15  ; N014  S20  M3  ; N015 G99 G82 X550.0 Y-450.0  Z-130.0  R-97.0 P300 F70 ; N016  G98  Y-650.0  ;",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=16"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0016_c02",
+    "chunk_type": "text",
+    "page": 16,
+    "section_path": [],
+    "text": "N017  G99  X1050.0  ; N018  G98  Y-450.0  ; N019  G00  X0  Y0  M5  ; N020  G49  Z250.0  T31  M6  ; N021  G43  Z0  H31  ; N022  S10  M3  ; N023  G85  G99  X800.0  Y-350.0    Z-153.0  R47.0  F50  ; N024  G91  Y-200.0  K2  ; N025  G28  X0  Y0  M5  ; N026  G49  Z0  ; N027 M0 ; Reference 점에서 좌표계 설정 공구교환 Initial Level, 공구길이보정 주축기동 위치결정 후 #1Drilling 위치결정 후 #2Drilling, R 점 Level 복귀 위치결정 후 #3Drilling, Initial Level 복귀 위치결정 후 #4Drilling, R 점 Level 복귀 위치결정 후 #5Drilling, R 점 Level 복귀 위치결정 후 #6Drilling, Initial Level 복귀 Reference 점 복귀 , 주축정지 공구길이보정 Cancel, 공구교환 Initial Level, 공구길이보정 주축기동 위치결정 후 #7Drilling, R 점 Level 복귀 위치결정 후 #8Drilling, Initial Level 복귀 위치결정 후 #9Drilling, R 점 Level 복귀 위치결정 후 #10Drilling, Initial Level 복귀 원점복귀 , 주축정지 공구길이보정 Cancel, 공구 교환 Initial Level, 공구길이보정 주축기동",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=16"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0016_c03",
+    "chunk_type": "text",
+    "page": 16,
+    "section_path": [],
+    "text": "위치결정 후 #11Drilling, R 점 Level 복귀 위치결정 후 #12,#13Drilling, R 점 Level 복귀 Reference 점 복귀 , 주축정지 공구길이보정 Cancel Program 정지",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=16"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0017_c01",
+    "chunk_type": "text",
+    "page": 17,
+    "section_path": [],
+    "text": "6.4 공구경보정 (G40~G42) 의 Overview",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=17"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0017_c02",
+    "chunk_type": "figure",
+    "page": 17,
+    "section_path": [],
+    "text": "그림 6.4 (a) 공구경보정 Outline",
+    "table": null,
+    "figure": {
+      "image_path": "images/ko/p0017_f01.png",
+      "bbox": [
+        150.87418786784949,
+        192.28533935546875,
+        459.93865989326633,
+        510.3369140625
+      ],
+      "note": "공구의 반경값만큼 공구를 Offset 하여 이동시킬 수 있습니다 .( 그림 6.4 (a)) 공구의 반경값만큼 공구를 Offset 하기 위해서 처음 값이 공구반경이 되는 Offset Vector 를 만듭니다 .(Start Up) Offset Vector 는 공구의 진행방향에 직각으로 , Work 로부터 공구중심 방향을 향하고 있습니다 . Start Up 한 후 직선보간 , 원호보간 등을 지령하면 Offset Vector 만 공구를 Offset 하여 가공할 수 있습니다 . 마지막으로 출발점으로 공구를 복귀시키기 위해서 공구경보정을 Cancel 합니다 . 그림 6.4 (a) 공구경보정 Outline Format"
+    },
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=17",
+    "note": "공구의 반경값만큼 공구를 Offset 하여 이동시킬 수 있습니다 .( 그림 6.4 (a)) 공구의 반경값만큼 공구를 Offset 하기 위해서 처음 값이 공구반경이 되는 Offset Vector 를 만듭니다 .(Start Up) Offset Vector 는 공구의 진행방향에 직각으로 , Work 로부터 공구중심 방향을 향하고 있습니다 . Start Up 한 후 직선보간 , 원호보간 등을 지령하면 Offset Vector 만 공구를 Offset 하여 가공할 수 있습니다 . 마지막으로 출발점으로 공구를 복귀시키기 위해서 공구경보정을 Cancel 합니다 . 그림 6.4 (a) 공구경보정 Outline Format"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0017_c03",
+    "chunk_type": "text",
+    "page": 17,
+    "section_path": [],
+    "text": "· Start Up( 공구경보정 개시 ) G00( 또는 G01) G41( 또는 G42) IP_ D_ ; G41   : 공구경보정 왼쪽 (Group 07) G42   : 공구경보정 오른쪽 (Group 07) IP_ : 축 이동지령값 D_ : 공구경보정량 지정 Code(1~3 자릿수 ) (D Code) ·공구경보정 Cancel(Offset Mode Cancel) G40 IP_ ; G40 : 공구경보정 Cancel(Group 07)  (Offset Mode Cancel)",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=17"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0017_c04",
+    "chunk_type": "table",
+    "page": 17,
+    "section_path": [],
+    "text": "Offset 평면 평면선택 지령 IP_ XpYp G17 ; Xp_Yp_ ZpXp G18 ; Xp_Zp_ YpZp G19 ; Yp_Zp_",
+    "table": {
+      "columns": [
+        "Offset 평면",
+        "평면선택 지령",
+        "IP_"
+      ],
+      "rows": [
+        [
+          "XpYp",
+          "G17 ;",
+          "Xp_Yp_"
+        ],
+        [
+          "ZpXp",
+          "G18 ;",
+          "Xp_Zp_"
+        ],
+        [
+          "YpZp",
+          "G19 ;",
+          "Yp_Zp_"
+        ]
+      ],
+      "html": "<table><tbody><tr><th>Offset 평면</th><th>평면선택 지령</th><th>IP_</th></tr><tr><td>XpYp</td><td>G17 ;</td><td>Xp_Yp_</td></tr><tr><td>ZpXp</td><td>G18 ;</td><td>Xp_Zp_</td></tr><tr><td>YpZp</td><td>G19 ;</td><td>Yp_Zp_</td></tr></tbody></table>",
+      "note": "IP_ : 축 이동의 지령값 · Offset 평면의 선택"
+    },
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=17",
+    "note": "IP_ : 축 이동의 지령값 · Offset 평면의 선택"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0018_c01",
+    "chunk_type": "text",
+    "page": 18,
+    "section_path": [],
+    "text": "·공구경보정량의 음 (-) 양 (+) 과 공구중 경로 공구경보정량을 음 ( － ) 의 값으로 하면 Program 의 G41 와 G42 를 모두 바꾼 경우와 같이 공구가 동작합니다 . 따 라서 , Work 의 외측을 회전하고 있던 공구는 내측을 회전하고 , 내측을 회전하고 있던 공구는 외측을 회전합니다 . 그림 6.4 (d) 예와 같습니다 . 일반적으로 공구경보정량은 양 ( ＋ ) 의 값으로 Program 합니다 . Program 으로 ①과 같이 공구중심경로를 지정할 경우 공구경보정량을 음 ( － ) 의 값으로 하면 ②와 같이 움직입니 다 . 최초에 ②와 같이 Program 할 경우 공구경보정량을 음 ( － ) 의 값으로 하면 ①과 같이 움직입니다 .",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=18"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0018_c02",
+    "chunk_type": "figure",
+    "page": 18,
+    "section_path": [],
+    "text": "그림 6.4 (d) 보정량 음 (-) 양 (+) 에 의한 공구중심경로",
+    "table": null,
+    "figure": {
+      "image_path": "images/ko/p0018_f01.png",
+      "bbox": [
+        153.04831024681963,
+        217.94505310058594,
+        457.0201211814113,
+        351.920166015625
+      ],
+      "note": "따라서 , 1 개의 Program 으로 암수양쪽 모두의 형태를 절삭할 수 있어 양쪽의 차이는 공구경보정량을 적절히 선택하 는 것으로 임의선택할 수 있습니다 . 단 , Start Up, Offset Cancel 은 Type A 로 합니다 . ( 해설의 Start Up 참조 ) 그림 6.4 (d) 보정량 음 (-) 양 (+) 에 의한 공구중심경로 ·공구경보정량 설정"
+    },
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=18",
+    "note": "따라서 , 1 개의 Program 으로 암수양쪽 모두의 형태를 절삭할 수 있어 양쪽의 차이는 공구경보정량을 적절히 선택하 는 것으로 임의선택할 수 있습니다 . 단 , Start Up, Offset Cancel 은 Type A 로 합니다 . ( 해설의 Start Up 참조 ) 그림 6.4 (d) 보정량 음 (-) 양 (+) 에 의한 공구중심경로 ·공구경보정량 설정"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0018_c03",
+    "chunk_type": "text",
+    "page": 18,
+    "section_path": [],
+    "text": "공구경보정량은 Program 상에서 지령하는 D Code 에 대응하도록 MDI Panel 에서 설정해 놓습니다 . 주 D Code 가 0 에 대응하는 공구경보정량은 항상 0 을 의미합니다 . D0 에 대응하는 공구경보정량은 설정할 수 없습니다 . ·보정량 설정범위",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=18"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0018_c04",
+    "chunk_type": "table",
+    "page": 18,
+    "section_path": [],
+    "text": "OFE OFD OFC OFA 설정범위 0 0 0 1 ± 9999.99 mm 0 0 0 0 ± 9999.999 mm 0 0 1 0 ± 9999.9999 mm 0 1 0 0 ± 9999.99999 mm 1 0 0 0 ± 999.999999 mm",
+    "table": {
+      "columns": [
+        "OFE",
+        "OFD",
+        "OFC",
+        "OFA",
+        "설정범위"
+      ],
+      "rows": [
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "± 9999.99 mm"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "± 9999.999 mm"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0",
+          "± 9999.9999 mm"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "± 9999.99999 mm"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "0",
+          "± 999.999999 mm"
+        ]
+      ],
+      "html": "<table><tbody><tr><th>OFE</th><th>OFD</th><th>OFC</th><th>OFA</th><th>설정범위</th></tr><tr><td>0</td><td>0</td><td>0</td><td>1</td><td>± 9999.99 mm</td></tr><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>± 9999.999 mm</td></tr><tr><td>0</td><td>0</td><td>1</td><td>0</td><td>± 9999.9999 mm</td></tr><tr><td>0</td><td>1</td><td>0</td><td>0</td><td>± 9999.99999 mm</td></tr><tr><td>1</td><td>0</td><td>0</td><td>0</td><td>± 999.999999 mm</td></tr></tbody></table>",
+      "note": "보정량으로 설정할 수 있는 값의 범위는 Parameter OFE, OFD, OFC, OFA (No.5042 #3~#0) 에 따라서 아래 중 하 나가 됩니다 . 보정량의 설정범위 (mm input) 보정량의 설정범위 (inch input) Offset 번호 0 에 대응하는 보정량은 항상 0 을 의미합니다 . Offset 번호 0 에 대응하는 보정량은 설정할 수 없습니다 ."
+    },
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=18",
+    "note": "보정량으로 설정할 수 있는 값의 범위는 Parameter OFE, OFD, OFC, OFA (No.5042 #3~#0) 에 따라서 아래 중 하 나가 됩니다 . 보정량의 설정범위 (mm input) 보정량의 설정범위 (inch input) Offset 번호 0 에 대응하는 보정량은 항상 0 을 의미합니다 . Offset 번호 0 에 대응하는 보정량은 설정할 수 없습니다 ."
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0018_c05",
+    "chunk_type": "table",
+    "page": 18,
+    "section_path": [],
+    "text": "OFE OFD OFC OFA 설정범위 0 0 0 1 ± 999.999 inch 0 0 0 0 ± 999.9999 inch 0 0 1 0 ± 999.99999 inch 0 1 0 0 ± 999.999999 inch 1 0 0 0 ± 99.9999999 inch",
+    "table": {
+      "columns": [
+        "OFE",
+        "OFD",
+        "OFC",
+        "OFA",
+        "설정범위"
+      ],
+      "rows": [
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "± 999.999 inch"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "± 999.9999 inch"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0",
+          "± 999.99999 inch"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "± 999.999999 inch"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "0",
+          "± 99.9999999 inch"
+        ]
+      ],
+      "html": "<table><tbody><tr><th>OFE</th><th>OFD</th><th>OFC</th><th>OFA</th><th>설정범위</th></tr><tr><td>0</td><td>0</td><td>0</td><td>1</td><td>± 999.999 inch</td></tr><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>± 999.9999 inch</td></tr><tr><td>0</td><td>0</td><td>1</td><td>0</td><td>± 999.99999 inch</td></tr><tr><td>0</td><td>1</td><td>0</td><td>0</td><td>± 999.999999 inch</td></tr><tr><td>1</td><td>0</td><td>0</td><td>0</td><td>± 99.9999999 inch</td></tr></tbody></table>"
+    },
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=18"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0018_c06",
+    "chunk_type": "text",
+    "page": 18,
+    "section_path": [],
+    "text": "· Offset Vector Offset  Vector 는 크기가 D  Code 로 지정된 공구경보정량에 동일한 2 차원의 Vector 로 제어장치 내부에서 계산되어 공 구의 진행에 따라 Vector 의 방향은 Block 마다 재설정됩니다 .",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=18"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0019_c01",
+    "chunk_type": "text",
+    "page": 19,
+    "section_path": [],
+    "text": "Vector 는 Reset 에 의해 소거됩니다 . ·공구경보정량의 지정 공구경보정량의 지정은 D Code(Address D 에 이어지는 1~3 자릿수의 값 ) 에 의해 공구경보정량의 번호를 지정하는 것으로 실행합니다 . D Code 는 한 번 지령하면 이후 별도의 D Code 가 지령될 때까지 유효합니다 . D Code 는 공구경보정량을 지정하는 것 외에는 공구위치 보정량을 지정하는 목적으로도 사용합니다 . ·평면선택과 Vector Offset 계산은 평면선택 G Code G17, G18, G19 로 결정되는 평면내에서 실행됩니다 . Offset 계산을 실행하는 평면을 Offset 평면이라고 부릅니다 . Offset 평면 외의 축 좌표값은 Offset 의 영향을 받지 않고 Program 한 지령값이 그대로 사용됩니다 . 동시 3 축 지령의 경우 Offset 평면에 투영한 형상이 Offset 되도록 움직입니다 . 평면의 절환은 Offset Cancel Mode 로 실행합니다 . Offset Mode 중 평면을 재지정하면 Alarm(PS0037) 이 표시되고 공구는 정지됩니다 .",
+    "table": null,
+    "figure": null,
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=19"
+  },
+  {
+    "doc_id": "B-64484KO-2",
+    "lang": "ko",
+    "chunk_id": "ko_p0019_c02",
+    "chunk_type": "figure",
+    "page": 19,
+    "section_path": [],
+    "text": "",
+    "table": null,
+    "figure": {
+      "image_path": "images/ko/p0019_f01.png",
+      "bbox": [
+        56.48812475882921,
+        289.52667236328125,
+        536.6295429408951,
+        757.1796875
+      ],
+      "note": "예제"
+    },
+    "ui_screen": null,
+    "source_anchor": "sample_ko.pdf#page=19",
+    "note": "예제"
+  }
+]

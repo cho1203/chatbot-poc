@@ -1,0 +1,266 @@
+{
+  "tables": [
+    {
+      "file": "manual_1.pdf",
+      "lang": "ko",
+      "n": 1,
+      "page": 3,
+      "rows": 5,
+      "cols": 6
+    },
+    {
+      "file": "manual_1.pdf",
+      "lang": "ko",
+      "n": 2,
+      "page": 9,
+      "rows": 41,
+      "cols": 4
+    },
+    {
+      "file": "manual_1.pdf",
+      "lang": "ko",
+      "n": 3,
+      "page": 10,
+      "rows": 54,
+      "cols": 4
+    },
+    {
+      "file": "manual_1.pdf",
+      "lang": "ko",
+      "n": 4,
+      "page": 11,
+      "rows": 38,
+      "cols": 4
+    },
+    {
+      "file": "manual_1.pdf",
+      "lang": "ko",
+      "n": 5,
+      "page": 15,
+      "rows": 5,
+      "cols": 3
+    },
+    {
+      "file": "manual_1.pdf",
+      "lang": "ko",
+      "n": 6,
+      "page": 16,
+      "rows": 27,
+      "cols": 3
+    },
+    {
+      "file": "manual_1.pdf",
+      "lang": "ko",
+      "n": 7,
+      "page": 17,
+      "rows": 11,
+      "cols": 2
+    },
+    {
+      "file": "manual_2.pdf",
+      "lang": "en",
+      "n": 1,
+      "page": 3,
+      "rows": 5,
+      "cols": 1
+    },
+    {
+      "file": "manual_2.pdf",
+      "lang": "en",
+      "n": 2,
+      "page": 6,
+      "rows": 4,
+      "cols": 2
+    },
+    {
+      "file": "manual_2.pdf",
+      "lang": "en",
+      "n": 3,
+      "page": 7,
+      "rows": 5,
+      "cols": 3
+    },
+    {
+      "file": "manual_2.pdf",
+      "lang": "en",
+      "n": 4,
+      "page": 7,
+      "rows": 5,
+      "cols": 3
+    },
+    {
+      "file": "manual_2.pdf",
+      "lang": "en",
+      "n": 5,
+      "page": 8,
+      "rows": 5,
+      "cols": 2
+    },
+    {
+      "file": "manual_2.pdf",
+      "lang": "en",
+      "n": 6,
+      "page": 8,
+      "rows": 22,
+      "cols": 3
+    },
+    {
+      "file": "manual_2.pdf",
+      "lang": "en",
+      "n": 7,
+      "page": 9,
+      "rows": 4,
+      "cols": 3
+    },
+    {
+      "file": "manual_2.pdf",
+      "lang": "en",
+      "n": 8,
+      "page": 9,
+      "rows": 2,
+      "cols": 2
+    },
+    {
+      "file": "manual_2.pdf",
+      "lang": "en",
+      "n": 9,
+      "page": 9,
+      "rows": 4,
+      "cols": 3
+    },
+    {
+      "file": "manual_2.pdf",
+      "lang": "en",
+      "n": 10,
+      "page": 9,
+      "rows": 9,
+      "cols": 2
+    },
+    {
+      "file": "manual_2.pdf",
+      "lang": "en",
+      "n": 11,
+      "page": 10,
+      "rows": 9,
+      "cols": 2
+    },
+    {
+      "file": "manual_2.pdf",
+      "lang": "en",
+      "n": 12,
+      "page": 10,
+      "rows": 8,
+      "cols": 2
+    },
+    {
+      "file": "manual_2.pdf",
+      "lang": "en",
+      "n": 13,
+      "page": 10,
+      "rows": 9,
+      "cols": 2
+    },
+    {
+      "file": "manual_2.pdf",
+      "lang": "en",
+      "n": 14,
+      "page": 10,
+      "rows": 10,
+      "cols": 2
+    },
+    {
+      "file": "manual_2.pdf",
+      "lang": "en",
+      "n": 15,
+      "page": 11,
+      "rows": 38,
+      "cols": 4
+    },
+    {
+      "file": "manual_2.pdf",
+      "lang": "en",
+      "n": 16,
+      "page": 12,
+      "rows": 48,
+      "cols": 4
+    },
+    {
+      "file": "manual_2.pdf",
+      "lang": "en",
+      "n": 17,
+      "page": 13,
+      "rows": 45,
+      "cols": 4
+    },
+    {
+      "file": "manual_2.pdf",
+      "lang": "en",
+      "n": 18,
+      "page": 14,
+      "rows": 46,
+      "cols": 4
+    },
+    {
+      "file": "manual_2.pdf",
+      "lang": "en",
+      "n": 19,
+      "page": 15,
+      "rows": 48,
+      "cols": 4
+    },
+    {
+      "file": "manual_2.pdf",
+      "lang": "en",
+      "n": 20,
+      "page": 16,
+      "rows": 39,
+      "cols": 4
+    },
+    {
+      "file": "manual_2.pdf",
+      "lang": "en",
+      "n": 21,
+      "page": 17,
+      "rows": 42,
+      "cols": 4
+    },
+    {
+      "file": "manual_2.pdf",
+      "lang": "en",
+      "n": 22,
+      "page": 18,
+      "rows": 47,
+      "cols": 5
+    },
+    {
+      "file": "manual_2.pdf",
+      "lang": "en",
+      "n": 23,
+      "page": 19,
+      "rows": 55,
+      "cols": 4
+    },
+    {
+      "file": "manual_2.pdf",
+      "lang": "en",
+      "n": 24,
+      "page": 20,
+      "rows": 49,
+      "cols": 5
+    }
+  ],
+  "pictures": [
+    {
+      "file": "manual_2.pdf",
+      "lang": "en",
+      "n": 1,
+      "page": 5,
+      "bbox": [
+        106.69211003755102,
+        229.73077392578125,
+        501.24081255939376,
+        521.8280639648438
+      ]
+    }
+  ]
+}

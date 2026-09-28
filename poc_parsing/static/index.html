@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>매뉴얼 질의</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%231C1C1A'/%3E%3Crect x='3' y='11' width='10' height='2' fill='%23E6B325'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    :root {
+      --bg: #f4f1ea;
+      --ink: #1c1c1a;
+      --muted: #6f6a60;
+      --line: #e4dfd4;
+      --card: #fffcf7;
+      --yellow: #e6b325;
+      --soft: #f7f4ee;
+      --danger: #8a3d32;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    }
+
+    body {
+      min-height: 100%;
+    }
+
+    .shell {
+      height: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 28px 28px 18px;
+      display: grid;
+      grid-template-rows: auto minmax(0, 1fr);
+      gap: 16px;
+    }
+
+    header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 24px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--line);
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      width: 56px;
+      height: 3px;
+      background: var(--yellow);
+    }
+
+    .eyebrow {
+      margin: 0 0 6px;
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 650;
+      letter-spacing: -0.03em;
+    }
+
+    .subtitle {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .docs {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .docs a {
+      border: 1px solid var(--line);
+      background: var(--card);
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: 12px;
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    .docs a:hover {
+      border-color: #d7c27a;
+    }
+
+    main {
+      min-height: 0;
+      display: grid;
+      grid-template-columns: minmax(0, 1.55fr) minmax(280px, 1fr);
+      gap: 16px;
+    }
+
+    .panel {
+      min-height: 0;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .panel-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      padding: 16px 18px 12px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .panel-head h2 {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 650;
+    }
+
+    .panel-head p {
+      margin: 0;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .transcript {
+      flex: 1;
+      min-height: 0;
+      overflow: auto;
+      padding: 22px 18px 8px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .empty {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 18px;
+      padding: 12px 8px 28px;
+    }
+
+    .empty h3 {
+      margin: 0;
+      font-size: 22px;
+      font-weight: 640;
+      letter-spacing: -0.03em;
+    }
+
+    .empty p {
+      margin: 8px 0 0;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .chip, .page-chip {
+      border: 1px solid var(--line);
+      background: var(--soft);
+      color: var(--ink);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font: inherit;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    .chip:hover, .page-chip:hover, .card.is-hit {
+      border-color: #d7c27a;
+    }
+
+    .page-chip {
+      padding: 4px 9px;
+      font-size: 12px;
+      background: #fff;
+    }
+
+    .page-chip.is-on {
+      background: #1c1c1a;
+      color: #f6f4ef;
+      border-color: #1c1c1a;
+    }
+
+    .turn {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+
+    .bubble {
+      max-width: 86%;
+      padding: 12px 14px;
+      line-height: 1.65;
+      font-size: 15px;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+
+    .bubble.user {
+      align-self: flex-end;
+      background: var(--ink);
+      color: #f6f4ef;
+      border-radius: 16px 16px 4px 16px;
+    }
+
+    .bubble.bot {
+      align-self: flex-start;
+      background: var(--soft);
+      border-radius: 16px 16px 16px 4px;
+      cursor: pointer;
+    }
+
+    .bubble.bot.is-selected {
+      box-shadow: inset 3px 0 0 var(--yellow);
+    }
+
+    .bubble.error {
+      color: var(--danger);
+    }
+
+    .pages {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .pages:empty { display: none; }
+
+    .bubble.bot .pages { margin-bottom: 8px; }
+
+    .composer {
+      display: flex;
+      gap: 8px;
+      padding: 14px;
+      border-top: 1px solid var(--line);
+    }
+
+    input[type="text"] {
+      flex: 1;
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 12px;
+      padding: 12px 14px;
+      font: inherit;
+      font-size: 15px;
+      color: var(--ink);
+      outline: none;
+    }
+
+    input[type="text"]:focus {
+      border-color: #c9b56a;
+    }
+
+    button.send {
+      border: 0;
+      background: var(--ink);
+      color: #f6f4ef;
+      border-radius: 12px;
+      padding: 0 18px;
+      font: inherit;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    button.send:disabled, .chip:disabled {
+      opacity: 0.45;
+      cursor: default;
+    }
+
+    .sources {
+      flex: 1;
+      min-height: 0;
+      overflow: auto;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .source-empty {
+      margin: auto;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.6;
+      padding: 24px;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 14px;
+      background: #fff;
+    }
+
+    .card.is-text { box-shadow: inset 3px 0 0 #b0562a; }
+    .card.is-table { box-shadow: inset 3px 0 0 #3d6f9c; }
+    .card.is-figure { box-shadow: inset 3px 0 0 var(--yellow); }
+    .card.is-ui_screen { box-shadow: inset 3px 0 0 #4a7a55; }
+    .card.is-excerpt { box-shadow: inset 3px 0 0 #c8c2b6; }
+
+    .meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .badge {
+      font-size: 11px;
+      letter-spacing: 0.04em;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 3px 8px;
+      color: var(--muted);
+    }
+
+    .badge.is-text {
+      color: #7a3416;
+      background: #f8e3d4;
+      border-color: #d4885a;
+    }
+
+    .badge.is-table {
+      color: #2b5578;
+      background: #e8f1f8;
+      border-color: #b7cfe0;
+    }
+
+    .badge.is-figure {
+      color: #6b5410;
+      background: #f8efc8;
+      border-color: #e6b325;
+    }
+
+    .badge.is-ui_screen {
+      color: #2f5a38;
+      background: #e6f3ea;
+      border-color: #9cc5a6;
+    }
+
+    .where {
+      font-size: 13px;
+      font-weight: 620;
+    }
+
+    .preview {
+      margin: 0;
+      color: #3c3933;
+      font-size: 13px;
+      line-height: 1.55;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .card img {
+      display: block;
+      width: 100%;
+      max-height: 180px;
+      object-fit: contain;
+      margin-top: 10px;
+      background: var(--soft);
+      border-radius: 10px;
+      cursor: zoom-in;
+    }
+
+    .table-wrap {
+      margin-top: 10px;
+      overflow: auto;
+      max-height: 220px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fff;
+    }
+
+    .table-wrap table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 11px;
+    }
+
+    .table-wrap th,
+    .table-wrap td {
+      border: 1px solid var(--line);
+      padding: 4px 6px;
+      vertical-align: top;
+    }
+
+    .table-wrap caption {
+      padding: 6px;
+      text-align: left;
+      font-weight: 620;
+    }
+
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(28, 28, 26, 0.72);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 28px;
+      z-index: 20;
+    }
+
+    .lightbox[hidden] { display: none; }
+
+    .lightbox img {
+      max-width: min(920px, 100%);
+      max-height: calc(100vh - 80px);
+      background: #fff;
+      border-radius: 12px;
+    }
+
+    .lightbox button {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      border: 0;
+      background: #fff;
+      border-radius: 999px;
+      padding: 8px 14px;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    @media (max-width: 860px) {
+      .shell {
+        height: auto;
+        min-height: 100%;
+        padding: 18px 14px 16px;
+      }
+
+      header, main {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .docs { justify-content: flex-start; }
+
+      .panel { min-height: 420px; }
+
+      h1 { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <div>
+        <p class="eyebrow">FANUC 취급설명서</p>
+        <h1>매뉴얼 질의</h1>
+        <p class="subtitle">검색된 페이지를 근거로 답합니다.</p>
+      </div>
+      <div class="docs">
+        <a href="/manuals/ko.pdf" target="_blank" rel="noopener">한글 취급설명서</a>
+        <a href="/manuals/en.pdf" target="_blank" rel="noopener">MANUAL GUIDE i</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="panel" aria-label="대화">
+        <div class="panel-head">
+          <h2>질문</h2>
+          <p id="ask-state">준비됨</p>
+        </div>
+        <div class="transcript" id="transcript">
+          <div class="empty" id="empty">
+            <div>
+              <h3>매뉴얼에 있는 내용만 답합니다.</h3>
+              <p>아래 질문으로 바로 확인하거나, 직접 입력해 보세요.</p>
+            </div>
+            <div class="chips" id="chips"></div>
+          </div>
+        </div>
+        <form class="composer" id="form">
+          <input id="query" type="text" placeholder="매뉴얼에 대해 질문해 보세요" autocomplete="off" required>
+          <button class="send" id="send" type="submit">보내기</button>
+        </form>
+      </section>
+
+      <aside class="panel" aria-label="근거">
+        <div class="panel-head">
+          <h2>이번 답의 근거</h2>
+          <p id="source-count">아직 없음</p>
+        </div>
+        <div class="sources" id="sources">
+          <p class="source-empty">질문을 보내면 답에 쓰인 페이지가 여기 표시됩니다.</p>
+        </div>
+      </aside>
+    </main>
+  </div>
+  <div class="lightbox" id="lightbox" hidden>
+    <button type="button" id="lightbox-close">닫기</button>
+    <img id="lightbox-img" alt="매뉴얼 페이지">
+  </div>
+
+  <script>
+    const SUGGESTIONS = [
+      "공구경보정은 어떻게 시작하나요?",
+      "G41과 G42는 무엇이 다른가요?",
+      "메모리 카드에서 프로그램을 어떻게 넣나요?",
+      "파일을 지우기 전 확인 화면은 무엇인가요?",
+    ];
+
+    const TYPE_LABEL = {
+      text: "텍스트",
+      table: "표",
+      figure: "도면",
+      ui_screen: "화면",
+    };
+
+    const LANG_LABEL = { ko: "한글", en: "영어" };
+
+    const transcript = document.getElementById("transcript");
+    const empty = document.getElementById("empty");
+    const chips = document.getElementById("chips");
+    const form = document.getElementById("form");
+    const queryInput = document.getElementById("query");
+    const send = document.getElementById("send");
+    const askState = document.getElementById("ask-state");
+    const sourcesEl = document.getElementById("sources");
+    const sourceCount = document.getElementById("source-count");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const lightboxClose = document.getElementById("lightbox-close");
+
+    const turns = [];
+    let activeId = null;
+    let busy = false;
+    let requestNo = 0;
+
+    SUGGESTIONS.forEach((text) => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "chip";
+      button.textContent = text;
+      button.addEventListener("click", () => submitQuery(text));
+      chips.appendChild(button);
+    });
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      submitQuery(queryInput.value.trim());
+    });
+
+    function setBusy(on) {
+      busy = on;
+      send.disabled = on;
+      queryInput.disabled = on;
+      chips.querySelectorAll("button").forEach((button) => {
+        button.disabled = on;
+      });
+      send.textContent = on ? "찾는 중" : "보내기";
+      askState.textContent = on ? "매뉴얼에서 찾는 중" : "준비됨";
+    }
+
+    async function submitQuery(query) {
+      if (!query || busy) return;
+      queryInput.value = "";
+      const id = ++requestNo;
+      const turn = {
+        id,
+        query,
+        answer: "",
+        sources: [],
+        items: [],
+        model: "",
+        error: false,
+        pending: true,
+      };
+      turns.push(turn);
+      activeId = id;
+      if (empty) empty.remove();
+      renderTurn(turn);
+      renderSources(turn);
+      setBusy(true);
+      try {
+        const [askResult, searchResult] = await Promise.allSettled([
+          postJson("/ask", { query }),
+          postJson("/search", { query, top_k: 3 }),
+        ]);
+        if (id !== requestNo) return;
+        if (askResult.status === "fulfilled") {
+          turn.answer = askResult.value.answer || "답변을 만들지 못했습니다.";
+          turn.sources = sortedPages(askResult.value.sources);
+          turn.model = askResult.value.model_used || "";
+        } else {
+          turn.error = true;
+          turn.answer = askResult.reason.message || "답변을 가져오지 못했습니다.";
+        }
+        if (searchResult.status === "fulfilled" && Array.isArray(searchResult.value)) {
+          turn.items = searchResult.value.slice().sort((a, b) => Number(a.page || 0) - Number(b.page || 0));
+        }
+        turn.pending = false;
+        updateTurn(turn);
+        if (activeId === id) renderSources(turn);
+      } finally {
+        if (id === requestNo) setBusy(false);
+      }
+    }
+
+    async function postJson(url, body) {
+      let response;
+      try {
+        response = await fetch(url, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(body),
+        });
+      } catch {
+        throw new Error("서버에 연결하지 못했습니다. 검색 API가 켜져 있는지 확인해 주세요.");
+      }
+      if (!response.ok) {
+        let detail = "요청이 실패했습니다.";
+        try {
+          const payload = await response.json();
+          if (payload && payload.detail) detail = String(payload.detail);
+        } catch { /* 본문이 JSON이 아닐 수 있다 */ }
+        throw new Error(detail);
+      }
+      return response.json();
+    }
+
+    function renderTurn(turn) {
+      const block = document.createElement("div");
+      block.className = "turn";
+      block.dataset.id = String(turn.id);
+
+      const user = document.createElement("div");
+      user.className = "bubble user";
+      user.textContent = turn.query;
+      block.appendChild(user);
+
+      const bot = document.createElement("div");
+      bot.className = "bubble bot is-selected";
+      bot.addEventListener("click", () => selectTurn(turn.id));
+
+      const pages = document.createElement("div");
+      pages.className = "pages";
+      pages.dataset.role = "pages";
+
+      const body = document.createElement("div");
+      body.dataset.role = "answer";
+      body.textContent = "매뉴얼에서 찾는 중";
+      bot.append(pages, body);
+      block.appendChild(bot);
+
+      clearSelected();
+      transcript.appendChild(block);
+      transcript.scrollTop = transcript.scrollHeight;
+    }
+
+    function sortedPages(values) {
+      return [...new Set((values || []).map((page) => Number(page)).filter((page) => page > 0))].sort((a, b) => a - b);
+    }
+
+    function updateTurn(turn) {
+      const block = transcript.querySelector(`.turn[data-id="${turn.id}"]`);
+      if (!block) return;
+      const bot = block.querySelector(".bubble.bot");
+      const body = block.querySelector('[data-role="answer"]');
+      body.textContent = turn.answer;
+      bot.classList.toggle("error", turn.error);
+      const pages = block.querySelector('[data-role="pages"]');
+      pages.replaceChildren();
+      sortedPages(turn.sources).forEach((page) => {
+        const chip = document.createElement("button");
+        chip.type = "button";
+        chip.className = "page-chip";
+        chip.textContent = `p.${page}`;
+        chip.addEventListener("click", () => {
+          selectTurn(turn.id);
+          const card = sourcesEl.querySelector(`[data-page="${page}"]`);
+          if (!card) return;
+          card.scrollIntoView({ block: "nearest" });
+          const img = card.querySelector("img:last-of-type");
+          if (img && img.src) openPage(img.src, img.alt);
+        });
+        pages.appendChild(chip);
+      });
+    }
+
+    function selectTurn(id) {
+      activeId = id;
+      clearSelected();
+      const block = transcript.querySelector(`.turn[data-id="${id}"]`);
+      const bot = block && block.querySelector('[data-role="answer"]');
+      if (bot) bot.classList.add("is-selected");
+      const turn = turns.find((item) => item.id === id);
+      if (turn) renderSources(turn);
+    }
+
+    function clearSelected() {
+      transcript.querySelectorAll(".bubble.bot.is-selected").forEach((node) => {
+        node.classList.remove("is-selected");
+      });
+    }
+
+    function renderSources(turn) {
+      sourcesEl.replaceChildren();
+      if (turn.pending) {
+        sourceCount.textContent = "찾는 중";
+        const note = document.createElement("p");
+        note.className = "source-empty";
+        note.textContent = "관련 페이지를 찾고 있습니다.";
+        sourcesEl.appendChild(note);
+        return;
+      }
+      const used = new Set(turn.sources.map((page) => Number(page)));
+      const items = turn.items || [];
+      sourceCount.textContent = items.length ? `${items.length}건` : "없음";
+      if (!items.length) {
+        const note = document.createElement("p");
+        note.className = "source-empty";
+        note.textContent = turn.error
+          ? "근거를 불러오지 못했습니다."
+          : "관련 페이지를 찾지 못했습니다.";
+        sourcesEl.appendChild(note);
+        return;
+      }
+      items.forEach((item) => {
+        const card = document.createElement("article");
+        const kind = TYPE_LABEL[item.chunk_type] ? item.chunk_type : "excerpt";
+        card.className = `card is-${kind}`;
+        const page = Number(item.page || 0);
+        card.dataset.page = String(page);
+        if (used.has(page)) card.classList.add("is-hit");
+
+        const meta = document.createElement("div");
+        meta.className = "meta";
+        const badge = document.createElement("span");
+        badge.className = `badge is-${kind}`;
+        badge.textContent = TYPE_LABEL[item.chunk_type] || "발췌";
+        const where = document.createElement("span");
+        where.className = "where";
+        const lang = LANG_LABEL[item.lang] || item.lang || "";
+        where.textContent = lang ? `${lang} · p.${page}` : `p.${page}`;
+        meta.append(badge, where);
+
+        const preview = document.createElement("p");
+        preview.className = "preview";
+        preview.textContent = item.text_preview || "";
+
+        card.append(meta, preview);
+        if (item.table_html) appendTable(card, item.table_html);
+        appendImage(card, item.image_path, `${where.textContent} ${badge.textContent}`);
+        const pageSrc = mediaSrc(item.page_image);
+        if (pageSrc) {
+          const image = document.createElement("img");
+          image.alt = `${where.textContent} 페이지`;
+          image.src = pageSrc;
+          image.addEventListener("click", () => openPage(pageSrc, image.alt));
+          image.addEventListener("error", () => image.remove());
+          card.appendChild(image);
+        }
+        sourcesEl.appendChild(card);
+      });
+    }
+
+    function appendTable(parent, raw) {
+      const html = String(raw || "");
+      if (!html.toLowerCase().includes("<table")) return;
+      const wrap = document.createElement("div");
+      wrap.className = "table-wrap";
+      wrap.innerHTML = html;
+      wrap.querySelectorAll("script,style,iframe,object,embed").forEach((node) => node.remove());
+      if (wrap.querySelector("table")) parent.appendChild(wrap);
+    }
+
+    function appendImage(parent, path, alt) {
+      const src = mediaSrc(path);
+      if (!src) return;
+      const image = document.createElement("img");
+      image.alt = alt;
+      image.src = src;
+      image.addEventListener("click", () => openPage(src, alt));
+      image.addEventListener("error", () => image.remove());
+      parent.appendChild(image);
+    }
+
+    function mediaSrc(path) {
+      const clean = String(path || "").replace(/^\/+/, "");
+      if (!/^images\/(?:pages\/)?(ko|en)\/[A-Za-z0-9_.-]+\.png$/.test(clean)) return "";
+      return `/${clean}`;
+    }
+
+    function openPage(src, alt) {
+      lightboxImg.src = src;
+      lightboxImg.alt = alt || "매뉴얼 페이지";
+      lightbox.hidden = false;
+    }
+
+    lightboxClose.addEventListener("click", () => {
+      lightbox.hidden = true;
+      lightboxImg.removeAttribute("src");
+    });
+    lightbox.addEventListener("click", (event) => {
+      if (event.target === lightbox) lightboxClose.click();
+    });
+  </script>
+</body>
+</html>
